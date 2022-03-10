@@ -1,0 +1,34 @@
+.site__header {
+    background-color: $color__background-header;
+    color: $color__font-header;
+    display: flex;
+    padding-left: 10px;
+
+    .header__titre {
+      font-size: 3em;
+      font-family: $font__titre;
+    }
+
+    .header__titre:hover {
+      color:  #C596D9;
+    }
+
+    @mixin description {
+      font-size: 1.5rem;
+      font-family: $font__main;
+    }
+
+    // .header__desc {
+    //   @description;
+    // }
+  }
+
+  .util{
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+
+    .util__lien a svg{
+      color: red;
+    }
+  }
