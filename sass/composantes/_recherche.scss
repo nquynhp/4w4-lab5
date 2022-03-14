@@ -1,7 +1,9 @@
 .recherche{
 
-    background-color: rgb(162, 134, 190);
+    background-color: #D94E73;
+    /*est-ce que c vrm la bonne manière?*/
     width: 205px;
+    height: 23px;
     position: relative;
 
     &__input{
@@ -18,5 +20,5 @@
 }
 
 .recherche:hover{
-    background-color: rgb(210, 182, 238);
+    background-color: #fa90ac;
 }
