@@ -479,17 +479,18 @@ COMPOSANTES
   color: #F2EBD5;
   display: flex;
   flex-direction: column;
-  padding-left: 10px;
 }
 
 @media screen and (min-width: 200px) {
   .site__header {
     flex-direction: row;
+    align-items: center;
   }
 }
 
 .site__header__titre {
   display: flex;
+  align-items: center;
 }
 
 .site__header .header__titre a {
@@ -497,6 +498,7 @@ COMPOSANTES
       le VAL est pour l'évolution de la valeur (de combien la valeur augmente chaque fois)*/
   font-size: clamp(2rem, 2vw, 4rem);
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  padding-left: 10px;
 }
 
 .site__header .header__titre:hover {
@@ -506,11 +508,17 @@ COMPOSANTES
 .util {
   display: flex;
   flex-direction: column;
-  margin-left: auto;
+  align-items: center;
+}
+
+@media screen and (min-width: 780px) {
+  .util {
+    margin-left: auto;
+  }
 }
 
 .util .util__lien a svg {
-  color: red;
+  color: #ff0080;
 }
 
 #chk-burger {
@@ -663,6 +671,14 @@ COMPOSANTES
 
 .recherche__input {
   background-color: transparent;
+  width: 100%;
+  transition: background-color .35s;
+  border: none;
+  outline: none;
+}
+
+.recherche__input:focus {
+  background-color: #272727;
 }
 
 .recherche__bouton {

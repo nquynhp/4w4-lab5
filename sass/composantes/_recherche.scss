@@ -8,6 +8,14 @@
 
     &__input{
         background-color: transparent;
+        width: 100%;
+        transition: background-color .35s;
+        border: none;
+        outline: none;
+        
+        &:focus {
+            background-color: #272727;
+        }
     }
 
     &__bouton{

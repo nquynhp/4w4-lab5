@@ -1,14 +1,18 @@
 .site__header {
     background-color: $color__background-header;
     color: $color__font-header;
+    // padding: 10px 20px 10px 40px;
     display: flex;
     flex-direction: column;
-    padding-left: 10px;
+
     @media screen and (min-width: 200px){
       flex-direction: row;
+      align-items: center;
     }
+
     &__titre{
       display: flex;
+      align-items: center;
     }
 
     .header__titre a{
@@ -16,6 +20,7 @@
       le VAL est pour l'évolution de la valeur (de combien la valeur augmente chaque fois)*/
       font-size: clamp(2rem, 2vw, 4rem);
       font-family: $font__titre;
+      padding-left: 10px;
     }
 
     .header__titre:hover {
@@ -23,8 +28,10 @@
     }
 
     @mixin description {
-      font-size: clamp(1rem, 2vw, 2rem);
+      font-size: clamp(1rem, 2vw, 1rem);
       font-family: $font__main;
+      padding-left: 50px;
+      // justify-content: space-around;
     }
 
     // .header__desc {
@@ -35,9 +42,14 @@
   .util{
     display: flex;
     flex-direction: column;
-    margin-left: auto;
+    align-items: center;
+
+    @media screen and (min-width : 780px){
+      margin-left: auto;
+    }
+
 
     .util__lien a svg{
-      color: red;
+      color: rgb(255, 0, 128);
     }
   }
