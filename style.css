@@ -1,6 +1,13 @@
 @charset "UTF-8";
 /*
-theme name: LAB4-ex2 - Ngoc Quynh Pham
+theme name: 4w4-tp1 Ngoc Quynh Pham
+Author: Ngoc Quynh Pham
+Author URL: https://github.com/nquynhp
+Description: Ce thème servira de base de développement pour l'ensemble du cours 4W4. Chacune des étapes de développement see retrouvera sur gitHub à l'adresse : https://github.com/nquynhp
+Version: 1.0.0
+License: GNU General Public License v2 or later
+License URI: LICENSE
+Text Domain: cidw-4w4
 */
 /* ---------------------------------------------------------
 VARIABLES
@@ -340,15 +347,15 @@ html {
 ÉLÉMENTS
 --------------------------------------------------------- */
 a {
-  color: #C596D9;
+  color: #D94E73;
 }
 
 a:visited {
-  color: #F27457;
+  color: #D5D971;
 }
 
 a:hover, a:focus, a:active {
-  color: #F24405;
+  color: #EDF25C;
 }
 
 a:focus {
@@ -360,15 +367,15 @@ a:hover, a:active {
 }
 
 .site__footer a {
-  color: #C596D9;
+  color: #000000;
 }
 
 .site__footer a:visited {
-  color: #F27457;
+  color: #D94E73;
 }
 
 .site__footer a:hover, .site__footer a:focus, .site__footer a:active {
-  color: #F24405;
+  color: #70722f;
 }
 
 .site__footer a:focus {
@@ -380,15 +387,15 @@ a:hover, a:active {
 }
 
 .site__header a {
-  color: #C596D9;
+  color: #D94E73;
 }
 
 .site__header a:visited {
-  color: #F24405;
+  color: #EDF25C;
 }
 
 .site__header a:hover, .site__header a:focus, .site__header a:active {
-  color: #F24405;
+  color: #EDF25C;
 }
 
 .site__header a:focus {
@@ -405,7 +412,7 @@ COMPOSANTES
 .principal {
   margin: 20px;
   padding: 10px 15px;
-  background-color: #C596D9;
+  background-color: #fa90ac;
   border-radius: 5px;
   box-shadow: #39443e 1px -1px 10px;
 }
@@ -417,7 +424,7 @@ COMPOSANTES
 
 .formation__titre {
   font-size: 2rem;
-  color: #443936;
+  color: black;
   margin: 10px 0px;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
 }
@@ -428,7 +435,7 @@ COMPOSANTES
 }
 
 .formation__cours {
-  background-color: #ffd6d1;
+  background-color: #F2EEAC;
   box-shadow: #3f0370 1px -2px 10px;
   border-radius: 5px;
   margin: 10px;
@@ -452,7 +459,7 @@ COMPOSANTES
 
 .cours__titre {
   font-size: 1.5rem;
-  color: #443936;
+  color: black;
   margin: 5px 0px;
 }
 
@@ -468,8 +475,8 @@ COMPOSANTES
 }
 
 .site__header {
-  background-color: #F27457;
-  color: #D5D9D2;
+  background-color: #D5D971;
+  color: #F2EBD5;
   display: flex;
   padding-left: 10px;
 }
@@ -530,11 +537,11 @@ COMPOSANTES
   display: block;
   text-decoration: none;
   padding: 4px;
-  background-color: #D5D9D2;
+  background-color: #F2EBD5;
 }
 
 .menu-item a:hover {
-  background-color: #C596D9;
+  background-color: #D94E73;
 }
 
 @media screen and (min-width: 800px) {
@@ -548,7 +555,7 @@ COMPOSANTES
 
 .site__footer {
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
-  background-color: #F27457;
+  background-color: #D5D971;
   padding: 20px;
   border-top-right-radius: 5%;
   justify-content: space-around;
@@ -605,7 +612,7 @@ COMPOSANTES
 .footer__titre,
 .footer__presentation,
 .footer__author {
-  color: #D5D9D2;
+  color: #F2EBD5;
   text-align: center;
 }
 
@@ -647,8 +654,8 @@ ANIMATION
   width: 100px;
   height: 100px;
   border-radius: 50%;
-  color: #401708;
-  background-color: #F27457;
+  color: #000000;
+  background-color: #D94E73;
   animation: anim_bloc 1s forwards;
 }
 
@@ -671,7 +678,7 @@ LAYOUT
 theme name: LAB4-ex2 - Ngoc Quynh Pham
 */
 .site {
-  background-color: #D5D9D2;
+  background-color: #F2EBD5;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 
@@ -684,29 +691,29 @@ theme name: LAB4-ex2 - Ngoc Quynh Pham
   bottom: 0;
   left: 0;
   right: 0;
-  background-color: #b36feb;
+  background-color: #D94E73;
   clip-path: circle(43.1% at 85% 73%);
   z-index: -1;
 }
 
 .site__header {
   grid-area: header;
-  background-color: #F27457;
+  background-color: #D5D971;
 }
 
 .site__barre {
   grid-area: sidebar;
-  background-color: #F24405;
+  background-color: #EDF25C;
 }
 
 .site__main {
   grid-area: main;
-  background-color: rbga(#C596D9, 0.5);
+  background-color: rbga(#fa90ac, 0.5);
 }
 
 .site__footer {
   grid-area: footer;
-  background-color: #F27457;
+  background-color: #D5D971;
 }
 
 .site {
