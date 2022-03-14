@@ -1,13 +1,14 @@
-
-#chk-burger {
-    display: none;
-}
-
 #burger {
     position : absolute;
     transition : transform .3s;
     transform : rotate(0);
 }
+
+
+#chk-burger {
+    display: none;
+}
+
 
 #chk-burger:checked ~ #burger {
     transform : rotate(90deg);
@@ -23,9 +24,12 @@
 // .menu-principal-container{}
 
 .menu{
+    background-color: #F2EBD5;
     list-style-type: none;
     margin : 0;
     padding :0;
+    padding-left: 5%;
+    padding-top: 5%;
 }
 
 .menu-item{
@@ -48,6 +52,7 @@
     }
     .menu-principal-container {
         display : block;
+        padding-top: 20%;
     }
 
 }

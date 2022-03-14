@@ -412,7 +412,7 @@ COMPOSANTES
 .principal {
   margin: 20px;
   padding: 10px 15px;
-  background-color: #fa90ac;
+  background-color: #fa90acb6;
   border-radius: 5px;
   box-shadow: #39443e 1px -1px 10px;
 }
@@ -521,14 +521,14 @@ COMPOSANTES
   color: #ff0080;
 }
 
-#chk-burger {
-  display: none;
-}
-
 #burger {
   position: absolute;
   transition: transform .3s;
   transform: rotate(0);
+}
+
+#chk-burger {
+  display: none;
 }
 
 #chk-burger:checked ~ #burger {
@@ -544,9 +544,12 @@ COMPOSANTES
 }
 
 .menu {
+  background-color: #F2EBD5;
   list-style-type: none;
   margin: 0;
   padding: 0;
+  padding-left: 5%;
+  padding-top: 5%;
 }
 
 .menu-item {
@@ -571,6 +574,7 @@ COMPOSANTES
   }
   .menu-principal-container {
     display: block;
+    padding-top: 20%;
   }
 }
 
@@ -763,7 +767,7 @@ theme name: LAB4-ex2 - Ngoc Quynh Pham
 
 .site__main {
   grid-area: main;
-  background-color: rbga(#fa90ac, 0.5);
+  background-color: rbga(#fa90acb6, 0.5);
 }
 
 .site__footer {
@@ -779,6 +783,10 @@ theme name: LAB4-ex2 - Ngoc Quynh Pham
 
 @media screen and (min-width: 800px) {
   .site {
+    grid-template-columns: 300px auto;
+    grid-template-areas: "header header" "sidebar main" "footer footer";
+  }
+  .home {
     grid-template-columns: 300px auto;
     grid-template-areas: "header header" "sidebar main" "footer footer";
   }

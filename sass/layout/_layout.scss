@@ -63,6 +63,14 @@ theme name: LAB4-ex2 - Ngoc Quynh Pham
             "sidebar main"
             "footer footer";
     }
+
+    .home {
+        grid-template-columns: ($size__site-barre) auto;
+        grid-template-areas:
+            "header header"
+            "sidebar main"
+            "footer footer";
+    }
 }
 
 
