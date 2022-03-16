@@ -412,7 +412,7 @@ COMPOSANTES
 .principal {
   margin: 20px;
   padding: 10px 15px;
-  background-color: #fa90acb6;
+  background-color: #ff5d88;
   border-radius: 5px;
   box-shadow: #39443e 1px -1px 10px;
 }
@@ -435,7 +435,7 @@ COMPOSANTES
 }
 
 .formation__cours {
-  background-color: #F2EEAC;
+  background-color: #F2EBD5;
   box-shadow: #3f0370 1px -2px 10px;
   border-radius: 5px;
   margin: 10px;
