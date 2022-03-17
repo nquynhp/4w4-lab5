@@ -29,7 +29,7 @@
             <section class="copyright"> </section>
 
             <section class="footer__auteur">
-                <p> Auteur : Ngoc Quynh Pham</p>
+                <p> ©copyright tous droits réservés à Ngoc Quynh Pham</p>
             </section>
 
             <section class="footer__menu">
