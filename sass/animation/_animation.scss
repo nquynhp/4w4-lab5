@@ -3,6 +3,7 @@
     width: 90%;
     // border: 1px solid rgb(235, 125, 125);
     justify-content: space-around;
+    padding: 2%;
     
     &__bloc {
         display: flex;
@@ -12,7 +13,7 @@
         height: 100px;
         border-radius: 50%;
         color: #000000;
-        background-color: #D94E73;
+        background-color: #ffcad8;
         animation: anim_bloc 1s forwards;
     }
 
