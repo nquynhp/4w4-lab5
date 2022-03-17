@@ -34,7 +34,6 @@
 //     }
 //     // .footer__auteur{}
 //     // .footer__description{}
-//     // .footer__recherche{}
 //     // .footer__copyright{}
 //   }
 // }
@@ -177,4 +176,21 @@
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.footer__auteur{
+  display: flex;
+  justify-content: center;
+  align-items:flex-start;
+}
+
+.footer__adresse_college{
+  display: flex;
+  justify-content: center;
+  align-items:flex-start;
+}
+
+.footer__recherche{
+  display: flex;
+  justify-content: center;
 }

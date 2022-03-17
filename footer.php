@@ -29,7 +29,11 @@
             <section class="copyright"> </section>
 
             <section class="footer__auteur">
-                <p> ©copyright tous droits réservés à Ngoc Quynh Pham</p>
+                <p> ©copyright tous droits réservés à Ngoc Quynh Pham </p>
+            </section>
+
+            <section class="footer__adresse_college">
+                <p> Adresse: 3800 Sherbrooke St E, Montreal, Quebec H1X 2A2 </p>
             </section>
 
             <section class="footer__menu">
