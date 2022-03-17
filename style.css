@@ -527,6 +527,11 @@ COMPOSANTES
   color: #ff0080;
 }
 
+.header__description {
+  padding-left: 5%;
+  width: 100%;
+}
+
 #burger {
   position: absolute;
   transition: transform .3s;
@@ -574,16 +579,7 @@ COMPOSANTES
   background-color: #D94E73;
 }
 
-@media screen and (min-width: 800px) {
-  #burger {
-    display: none;
-  }
-  .menu-principal-container {
-    display: block;
-    padding-top: 20%;
-  }
-}
-
+/* ----------------------------------------- */
 /* LUI QUI NE MARCHE PAS */
 /*
 <footer class="site__footer">
@@ -689,11 +685,6 @@ COMPOSANTES
   align-items: flex-start;
 }
 
-.footer__recherche {
-  display: flex;
-  justify-content: center;
-}
-
 .recherche {
   background-color: #D94E73;
   /*est-ce que c vrm la bonne manière?*/
@@ -787,7 +778,7 @@ theme name: LAB4-ex2 - Ngoc Quynh Pham
 
 .site__header {
   grid-area: header;
-  background-color: #D5D971;
+  background-color: rgba(213, 217, 113, 0.5);
 }
 
 .site__barre {

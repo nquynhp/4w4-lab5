@@ -46,21 +46,30 @@
     }
 }
 
-@media screen and (min-width : $largeur__media--tablette){
-    #burger {
-        display : none;
-    }
-    .menu-principal-container {
-        display : block;
-        padding-top: 20%;
-    }
 
-}
+// @media screen and (min-width : $largeur__media--tablette){
+//     .site #burger{
+//         display: none;
+//     }
 
+//     .site .menu-principal-container{
+//         display: block;
 
+//     }
 
+//     #burger {
+//         .site #burger {
+//             display : none;
+//         }
+//     }
 
+//     .menu-principal-container {
+//         .site .menu-principal-container {
+//             display : block;
+//         }
+//     }
+    /* ----------------------------------------- */
 
-
+// }
 
 
