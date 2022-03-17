@@ -505,11 +505,6 @@ COMPOSANTES
   padding-left: 10px;
 }
 
-.site__header .site__header__titre h1 {
-  /* Parametres de clamp clamp(MIN, VAL, MAX)
-      le VAL est pour l'évolution de la valeur (de combien la valeur augmente chaque fois)*/
-}
-
 .site__header .site__header__titre {
   flex: 1;
 }
@@ -690,6 +685,19 @@ COMPOSANTES
   display: flex;
   justify-content: center;
   align-items: flex-start;
+}
+
+.footer__menu nav li::marker {
+  text-decoration: none;
+}
+
+.footer__menu nav ul {
+  display: flex;
+}
+
+.footer__menu nav li {
+  justify-content: space-around;
+  padding-right: 20px;
 }
 
 .recherche {

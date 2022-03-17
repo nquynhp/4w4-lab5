@@ -190,7 +190,15 @@
   align-items:flex-start;
 }
 
-// .recherche__input{
-//   display: flex;
-//   justify-content: center;
-// }
+.footer__menu nav li::marker{
+  text-decoration: none;
+}
+
+.footer__menu nav ul{
+  display: flex;
+}
+
+.footer__menu nav li{
+  justify-content: space-around;
+  padding-right: 20px;
+}

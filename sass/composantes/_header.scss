@@ -21,14 +21,6 @@
       }
     }
 
-    .site__header__titre h1{
-      /* Parametres de clamp clamp(MIN, VAL, MAX)
-      le VAL est pour l'évolution de la valeur (de combien la valeur augmente chaque fois)*/
-      // font-size: clamp(1rem, 4vw, 7rem);
-      // font-family: $font__titre;
-      // padding-left: 10px;
-    }
-
     .site__header__titre{
       flex: 1;
     }
@@ -44,9 +36,6 @@
       // justify-content: space-around;
     }
 
-    // .header__desc {
-    //   @description;
-    // }
   }
 
   .util{
