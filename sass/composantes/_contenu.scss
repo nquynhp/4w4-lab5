@@ -6,6 +6,9 @@
     box-shadow: #7a7a6e 1px -1px 10px;
 }
 
+/*================================*/
+/*====== AJOUT COMMENTAIRE========*/
+/*================================*/
 .formation {
     display: flex;
     flex-direction: column;
@@ -39,10 +42,16 @@
         padding: 10px;
     }
 
+}
 
+.formation__cours a:visited{
+    color: $color__link-visited-cours;
 }
 
 
+/*================================*/
+/*====== ÉLÉMENTS DES COURS ========*/
+/*================================*/
 .cours__titre {
     font-size: 1.5rem;
     color: $color__font-main-cours;
@@ -60,7 +69,12 @@
     font-size: 1rem;
 }
 
-.cours__nbre-heure{
+.cours__nbre-heure {
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     color: $color__nbre-heure;
+}
+
+.svg_menu_principal {
+    width: 45px;
+    height: 45px;
 }

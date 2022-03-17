@@ -1,7 +1,9 @@
+/*========================================*/
+// Barre de recherche dans le header
+/*========================================*/
 .recherche{
 
     background-color: #D94E73;
-    /*est-ce que c vrm la bonne manière?*/
     width: 205px;
     height: 23px;
     position: relative;
@@ -29,4 +31,12 @@
 
 .recherche:hover{
     background-color: #fa90ac;
+}
+
+/*========================================*/
+// Barre de recherche dans le footer
+/*========================================*/
+.footer__recherche{
+    display: flex;
+    justify-content: center;
 }

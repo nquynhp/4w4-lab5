@@ -417,6 +417,9 @@ COMPOSANTES
   box-shadow: #7a7a6e 1px -1px 10px;
 }
 
+/*================================*/
+/*====== AJOUT COMMENTAIRE========*/
+/*================================*/
 .formation {
   display: flex;
   flex-direction: column;
@@ -458,6 +461,13 @@ COMPOSANTES
   }
 }
 
+.formation__cours a:visited {
+  color: #003f72;
+}
+
+/*================================*/
+/*====== ÉLÉMENTS DES COURS ========*/
+/*================================*/
 .cours__titre {
   font-size: 1.5rem;
   color: #f82d63;
@@ -480,11 +490,22 @@ COMPOSANTES
   color: #ff4a7a;
 }
 
+.svg_menu_principal {
+  width: 45px;
+  height: 45px;
+}
+
+/*================================*/
+/*====== AJOUT COMMENTAIRE========*/
+/*================================*/
 .site__header {
   background-color: #D5D971;
   color: #F2EBD5;
   display: flex;
   flex-direction: column;
+  /*================================*/
+  /*====== AJOUT COMMENTAIRE========*/
+  /*================================*/
 }
 
 @media screen and (min-width: 200px) {
@@ -513,6 +534,9 @@ COMPOSANTES
   color: #C596D9;
 }
 
+/*================================*/
+/*====== AJOUT COMMENTAIRE========*/
+/*================================*/
 .util {
   display: flex;
   flex-direction: column;
@@ -561,8 +585,8 @@ COMPOSANTES
   list-style-type: none;
   margin: 0;
   padding: 0;
-  padding-left: 5%;
-  padding-top: 5%;
+  padding-left: 15%;
+  padding-top: 15%;
 }
 
 .menu-item {
@@ -582,41 +606,6 @@ COMPOSANTES
 }
 
 /* ----------------------------------------- */
-/* LUI QUI NE MARCHE PAS */
-/*
-<footer class="site__footer">
-    <!-- première rangé de colonne -->
-    <div class="site__footer__colonne">
-        <section class="footer__article">
-            <h2>Titre 1</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est corrupti soluta vitae excepturi exercitationem dicta unde doloremque quisquam suscipit dolores nisi quos, quia expedita, reprehenderit illo commodi error tenetur quidem.</p>
-        </section>
-        <section class="footer__adresse">
-            jjkjk jkjk jkb jkbjk bjk bjk bkbjk j
-        </section>
-        <sectio
-         class="footer__liens">
-        <?php w
-        _nav_menu(array(
-               
-        "menu"=>"externe")); ?>
-        </secti
-        n>
-    </div>
-    <!-- sectio
-     de plusieurs lignes -->
-    <div class=
-    site__footer__ligne">
-        <sectio
-         class="footer__description"></section>
-        <sectio
-         class="footer__nav"></section>
-        <sectio
-         class="copyright"></section>
-        <sectio
-         class="footer__auteur"></section>
-    </div>
-*/
 .site__footer {
   display: flex;
   flex-direction: column;
@@ -662,6 +651,9 @@ COMPOSANTES
   padding: 3px;
 }
 
+/*================================*/
+/*====== AJOUT COMMENTAIRE========*/
+/*================================*/
 .footer__titre,
 .footer__presentation,
 .footer__author {
@@ -679,14 +671,19 @@ COMPOSANTES
   display: flex;
   justify-content: center;
   align-items: flex-start;
+  font-size: 12px;
 }
 
 .footer__adresse_college {
   display: flex;
   justify-content: center;
   align-items: flex-start;
+  font-size: 12px;
 }
 
+/*================================*/
+/*====== AJOUT COMMENTAIRE========*/
+/*================================*/
 .footer__menu nav li::marker {
   text-decoration: none;
 }
@@ -700,9 +697,10 @@ COMPOSANTES
   padding-right: 20px;
 }
 
+/*========================================*/
+/*========================================*/
 .recherche {
   background-color: #D94E73;
-  /*est-ce que c vrm la bonne manière?*/
   width: 205px;
   height: 23px;
   position: relative;
@@ -732,9 +730,19 @@ COMPOSANTES
   background-color: #fa90ac;
 }
 
+/*========================================*/
+/*========================================*/
+.footer__recherche {
+  display: flex;
+  justify-content: center;
+}
+
 /* ---------------------------------------------------------
 ANIMATION
 --------------------------------------------------------- */
+/*=================================*/
+/*====== AJOUT COMMENTAIRE ========*/
+/*=================================*/
 .animation {
   display: flex;
   width: 90%;
@@ -763,6 +771,29 @@ ANIMATION
   }
   100% {
     transform: translateX(0);
+  }
+}
+
+/*===========================================*/
+/*====== ANIMATION DU MENU PRINCIPAL ========*/
+/*===========================================*/
+.menu {
+  padding-left: 15%;
+  animation: anim_menu_principal .5s ease-in-out;
+}
+
+@keyframes anim_menu_principal {
+  0% {
+    padding-left: 25%;
+  }
+  50% {
+    padding-left: 30%;
+  }
+  80% {
+    padding-left: 0%;
+  }
+  100% {
+    padding-left: 15%;
   }
 }
 
