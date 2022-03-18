@@ -1,9 +1,8 @@
 /*
-theme name: LAB4-ex2 - Ngoc Quynh Pham
+theme name: TP1 - Ngoc Quynh Pham
 */
 
 .site {
-    //background-color: rgb(122, 176, 207);
     background-color: $color__background-body;
     font-family: $font__main;
 }
@@ -24,9 +23,10 @@ theme name: LAB4-ex2 - Ngoc Quynh Pham
 }
 
 
+
 .site__header{
     grid-area: header;  
-    background-color: rgba($color__background-header, .5);
+    background-color: $color__background-header;
 }
 
 .site__barre{

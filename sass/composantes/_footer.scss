@@ -11,9 +11,6 @@
       border : 1px solid #ddd;
       flex : 0 0 30%;
     }
-    .footer__article{}
-    .footer__lien{}
-    .footer__adresse{}
   
   } 
 
@@ -24,8 +21,6 @@
   }
 
 }
-
-
 
 
 .site__footer {
@@ -68,6 +63,10 @@
   align-items: center;
 }
 
+.wp-social-link{
+  transform: translateY(5px);
+}
+
 .footer__auteur{
   display: flex;
   justify-content: center;
@@ -92,6 +91,7 @@
 
 .footer__menu nav ul{
   display: flex;
+  list-style-type: none;
 }
 
 .footer__menu nav li{

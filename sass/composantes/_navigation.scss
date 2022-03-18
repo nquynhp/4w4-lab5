@@ -26,8 +26,8 @@
     list-style-type: none;
     margin : 0;
     padding :0;
-    padding-left: 15%;
-    padding-top: 15%;
+    // padding-left: 15%;
+    // padding-top: 15%;
 }
 
 .menu-item{
@@ -38,36 +38,21 @@
         text-decoration: none;
         padding : 4px;
         background-color: $color__background-link;
+        transition: all .5s ease-in-out;
         &:hover {
             background-color: $color__background-link-hover;
+            transform: translate(5px);
         }
     }
+    /***************/
+    /*******EUHHHHHHHHHH WHY THE FUCK********/
+    /***************/
+    li{
+        padding-left: auto;
+        &:hover{
+            padding-left: 20px;
+        }
+    }
+
 }
-
-
-// @media screen and (min-width : $largeur__media--tablette){
-//     .site #burger{
-//         display: none;
-//     }
-
-//     .site .menu-principal-container{
-//         display: block;
-
-//     }
-
-//     #burger {
-//         .site #burger {
-//             display : none;
-//         }
-//     }
-
-//     .menu-principal-container {
-//         .site .menu-principal-container {
-//             display : block;
-//         }
-//     }
-    /* ----------------------------------------- */
-
-// }
-
 

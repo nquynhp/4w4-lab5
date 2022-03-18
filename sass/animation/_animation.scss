@@ -1,10 +1,9 @@
 /*=================================*/
-/*====== AJOUT COMMENTAIRE ========*/
+/*====== ANIMATION DU BLOC ========*/
 /*=================================*/
 .animation {
     display: flex;
     width: 90%;
-    // border: 1px solid rgb(235, 125, 125);
     justify-content: space-around;
     padding: 2%;
     
@@ -41,7 +40,7 @@
 /*===========================================*/
 .menu{
     padding-left: 15%;
-    animation: anim_menu_principal .5s ease-in-out;
+    animation: anim_menu_principal .85s ease-in-out;
 }
 
 @keyframes anim_menu_principal{
@@ -59,5 +58,56 @@
 
     100%{
         padding-left: 15%;
+    }
+}
+
+
+
+/*===================================*/
+/*====== ANIMATION DU COEUR ========*/
+/*==================================*/
+.coeur{
+    animation: animCoeur 1.2s infinite;
+}
+
+@keyframes animCoeur {
+    0% {
+      transform: rotate(-45deg) scale(0.8);
+    }
+    15% {
+      transform: rotate(-45deg) scale(1);
+    }
+    25% {
+      transform: rotate(-45deg) scale(0.8);
+    }
+    10% {
+      transform: rotate(-45deg) scale(1.1);
+    }
+    45% {
+      transform: rotate(-45deg) scale(0.8);
+    }
+    100% {
+      transform: rotate(-45deg) scale(0.8);
+    }
+  }
+
+/*===================================*/
+/*====== ANIMATION DU CLIP PATH ========*/
+/*==================================*/
+  .home::after{
+    animation: animClipPath 2s infinite alternate;
+  }
+
+  @keyframes animClipPath{
+    0%{
+        transform: scale(1);
+    }
+
+    50%{
+        transform: scale(1.5);
+    }
+
+    100%{
+        transform: scale(1.2);
     }
 }
