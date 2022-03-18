@@ -1,6 +1,13 @@
 @charset "UTF-8";
 /*
-theme name: LAB4-ex2 - Ngoc Quynh Pham
+theme name: 4w4-tp1 Ngoc Quynh Pham
+Author: Ngoc Quynh Pham
+Author URL: https://github.com/nquynhp
+Description: Chacune des étapes de développement see retrouvera sur gitHub à l'adresse : https://github.com/nquynhp
+Version: 1.0.0
+License: GNU General Public License v2 or later
+License URI: LICENSE
+Text Domain: cidw-4w4
 */
 /* ---------------------------------------------------------
 VARIABLES
@@ -340,15 +347,15 @@ html {
 ÉLÉMENTS
 --------------------------------------------------------- */
 a {
-  color: #C596D9;
+  color: #D94E73;
 }
 
 a:visited {
-  color: #F27457;
+  color: #D5D971;
 }
 
 a:hover, a:focus, a:active {
-  color: #F24405;
+  color: #EDF25C;
 }
 
 a:focus {
@@ -360,15 +367,15 @@ a:hover, a:active {
 }
 
 .site__footer a {
-  color: #C596D9;
+  color: #000000;
 }
 
 .site__footer a:visited {
-  color: #F27457;
+  color: #D94E73;
 }
 
 .site__footer a:hover, .site__footer a:focus, .site__footer a:active {
-  color: #F24405;
+  color: #70722f;
 }
 
 .site__footer a:focus {
@@ -380,15 +387,15 @@ a:hover, a:active {
 }
 
 .site__header a {
-  color: #C596D9;
+  color: #D94E73;
 }
 
 .site__header a:visited {
-  color: #F24405;
+  color: #EDF25C;
 }
 
 .site__header a:hover, .site__header a:focus, .site__header a:active {
-  color: #F24405;
+  color: #70722f;
 }
 
 .site__header a:focus {
@@ -405,11 +412,14 @@ COMPOSANTES
 .principal {
   margin: 20px;
   padding: 10px 15px;
-  background-color: #C596D9;
-  border-radius: 5px;
-  box-shadow: #39443e 1px -1px 10px;
+  background-color: #ff5d88;
+  border-radius: 8px;
+  box-shadow: #7a7a6e 1px -1px 10px;
 }
 
+/*================================*/
+/*====== AJOUT COMMENTAIRE========*/
+/*================================*/
 .formation {
   display: flex;
   flex-direction: column;
@@ -417,9 +427,10 @@ COMPOSANTES
 
 .formation__titre {
   font-size: 2rem;
-  color: #443936;
+  color: #ffcad8;
   margin: 10px 0px;
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-weight: lighter;
 }
 
 .formation__liste {
@@ -428,8 +439,8 @@ COMPOSANTES
 }
 
 .formation__cours {
-  background-color: #ffd6d1;
-  box-shadow: #3f0370 1px -2px 10px;
+  background-color: #D5D971;
+  box-shadow: #f2ebd5c9 1px -2px 10px;
   border-radius: 5px;
   margin: 10px;
   display: flex;
@@ -450,16 +461,23 @@ COMPOSANTES
   }
 }
 
+.formation__cours a:visited {
+  color: #006cc5;
+}
+
+/*================================*/
+/*====== ÉLÉMENTS DES COURS ========*/
+/*================================*/
 .cours__titre {
   font-size: 1.5rem;
-  color: #443936;
+  color: #f82d63;
   margin: 5px 0px;
 }
 
 .cours__sigle {
   font-size: 1.2rem;
   font-weight: bold;
-  color: #60008d;
+  color: #F2EBD5;
   margin: 0;
 }
 
@@ -467,40 +485,87 @@ COMPOSANTES
   font-size: 1rem;
 }
 
+.cours__nbre-heure {
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  color: #ff4a7a;
+}
+
+.svg_menu_principal {
+  width: 45px;
+  height: 45px;
+}
+
+/*================================*/
+/*====== AJOUT COMMENTAIRE========*/
+/*================================*/
 .site__header {
-  background-color: #F27457;
-  color: #D5D9D2;
+  background-color: #D5D971;
+  color: #F2EBD5;
   display: flex;
+  flex-direction: column;
+  /*================================*/
+  /*====== AJOUT COMMENTAIRE========*/
+  /*================================*/
+}
+
+@media screen and (min-width: 200px) {
+  .site__header {
+    flex-direction: row;
+    align-items: center;
+  }
+}
+
+.site__header__titre {
+  display: flex;
+  align-items: center;
+}
+
+.site__header__titre h1 {
+  font-size: clamp(1rem, 4vw, 7rem);
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
   padding-left: 10px;
 }
 
-.site__header .header__titre {
-  font-size: 3em;
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+.site__header .site__header__titre {
+  flex: 1;
 }
 
 .site__header .header__titre:hover {
   color: #C596D9;
 }
 
+/*================================*/
+/*====== AJOUT COMMENTAIRE========*/
+/*================================*/
 .util {
   display: flex;
   flex-direction: column;
-  margin-left: auto;
+  align-items: center;
+}
+
+@media screen and (min-width: 900px) {
+  .util {
+    margin-left: auto;
+    align-items: flex-end;
+  }
 }
 
 .util .util__lien a svg {
-  color: red;
+  color: #ff0080;
 }
 
-#chk-burger {
-  display: none;
+.header__description {
+  padding-left: 5%;
 }
 
 #burger {
   position: absolute;
   transition: transform .3s;
   transform: rotate(0);
+}
+
+#chk-burger {
+  display: none;
 }
 
 #chk-burger:checked ~ #burger {
@@ -516,9 +581,12 @@ COMPOSANTES
 }
 
 .menu {
+  background-color: #F2EBD5;
   list-style-type: none;
   margin: 0;
   padding: 0;
+  padding-left: 15%;
+  padding-top: 15%;
 }
 
 .menu-item {
@@ -530,62 +598,51 @@ COMPOSANTES
   display: block;
   text-decoration: none;
   padding: 4px;
-  background-color: #D5D9D2;
+  background-color: #F2EBD5;
 }
 
 .menu-item a:hover {
-  background-color: #C596D9;
+  background-color: #D94E73;
 }
 
-@media screen and (min-width: 800px) {
-  #burger {
-    display: none;
-  }
-  .menu-principal-container {
-    display: block;
-  }
-}
-
+/* ----------------------------------------- */
 .site__footer {
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
-  background-color: #F27457;
-  padding: 20px;
-  border-top-right-radius: 5%;
-  justify-content: space-around;
-  gap: 10px;
-  display: flex;
-}
-
-.site__footer_colonne {
   display: flex;
   flex-direction: column;
-  border: 2px solid white;
+}
+
+.site__footer__colonne {
+  display: flex;
+  justify-content: space-between;
+}
+
+.site__footer__colonne section {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #ddd;
   flex: 0 0 30%;
 }
 
-.site__footer_ligne {
+.site__footer__ligne {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.site__footer__menu {
-  display: flex;
-  flex-direction: row;
+.site__footer {
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  background-color: #D5D971;
+  padding: 15px;
 }
 
 .site__footer__menu__ul {
   display: flex;
-  flex: 1;
   list-style-type: none;
   justify-content: center;
-  flex-direction: column;
 }
 
 .site__footer__menu__ul .menu-item {
   margin: 10px 5px;
-  flex: 2;
-  flex-direction: column;
 }
 
 .site__footer__menu__ul .menu-item a {
@@ -594,29 +651,71 @@ COMPOSANTES
   padding: 3px;
 }
 
-.site__footer__menu__ul .menu-item a svg {
-  color: #c596d9ce;
-}
-
-.site__footer__menu__ul .menu-item a:hover svg {
-  color: #F24405;
-}
-
+/*================================*/
+/*====== AJOUT COMMENTAIRE========*/
+/*================================*/
 .footer__titre,
 .footer__presentation,
 .footer__author {
-  color: #D5D9D2;
+  color: #000000;
   text-align: center;
 }
 
+.footer__sociaux {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer__auteur {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  font-size: 12px;
+}
+
+.footer__adresse_college {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  font-size: 12px;
+}
+
+/*================================*/
+/*====== AJOUT COMMENTAIRE========*/
+/*================================*/
+.footer__menu nav li::marker {
+  text-decoration: none;
+}
+
+.footer__menu nav ul {
+  display: flex;
+}
+
+.footer__menu nav li {
+  justify-content: space-around;
+  padding-right: 20px;
+}
+
+/*========================================*/
+/*========================================*/
 .recherche {
-  background-color: #a286be;
+  background-color: #D94E73;
   width: 205px;
+  height: 23px;
   position: relative;
 }
 
 .recherche__input {
   background-color: transparent;
+  width: 100%;
+  transition: background-color .35s;
+  border: none;
+  outline: none;
+}
+
+.recherche__input:focus {
+  background-color: #272727;
 }
 
 .recherche__bouton {
@@ -628,16 +727,27 @@ COMPOSANTES
 }
 
 .recherche:hover {
-  background-color: #d2b6ee;
+  background-color: #fa90ac;
+}
+
+/*========================================*/
+/*========================================*/
+.footer__recherche {
+  display: flex;
+  justify-content: center;
 }
 
 /* ---------------------------------------------------------
 ANIMATION
 --------------------------------------------------------- */
+/*=================================*/
+/*====== AJOUT COMMENTAIRE ========*/
+/*=================================*/
 .animation {
   display: flex;
   width: 90%;
   justify-content: space-around;
+  padding: 2%;
 }
 
 .animation__bloc {
@@ -647,8 +757,8 @@ ANIMATION
   width: 100px;
   height: 100px;
   border-radius: 50%;
-  color: #401708;
-  background-color: #F27457;
+  color: #000000;
+  background-color: #ffcad8;
   animation: anim_bloc 1s forwards;
 }
 
@@ -664,6 +774,29 @@ ANIMATION
   }
 }
 
+/*===========================================*/
+/*====== ANIMATION DU MENU PRINCIPAL ========*/
+/*===========================================*/
+.menu {
+  padding-left: 15%;
+  animation: anim_menu_principal .5s ease-in-out;
+}
+
+@keyframes anim_menu_principal {
+  0% {
+    padding-left: 25%;
+  }
+  50% {
+    padding-left: 30%;
+  }
+  80% {
+    padding-left: 0%;
+  }
+  100% {
+    padding-left: 15%;
+  }
+}
+
 /* ---------------------------------------------------------
 LAYOUT
 --------------------------------------------------------- */
@@ -671,8 +804,8 @@ LAYOUT
 theme name: LAB4-ex2 - Ngoc Quynh Pham
 */
 .site {
-  background-color: #D5D9D2;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  background-color: #F2EBD5;
+  font-family: monaco, Consolas, "Lucida Console";
 }
 
 .home::after {
@@ -684,29 +817,29 @@ theme name: LAB4-ex2 - Ngoc Quynh Pham
   bottom: 0;
   left: 0;
   right: 0;
-  background-color: #b36feb;
+  background-color: #D94E73;
   clip-path: circle(43.1% at 85% 73%);
   z-index: -1;
 }
 
 .site__header {
   grid-area: header;
-  background-color: #F27457;
+  background-color: rgba(213, 217, 113, 0.5);
 }
 
 .site__barre {
   grid-area: sidebar;
-  background-color: #F24405;
+  background-color: #EDF25C;
 }
 
 .site__main {
   grid-area: main;
-  background-color: rbga(#C596D9, 0.5);
+  background-color: rbga(#fa90acb6, 0.5);
 }
 
 .site__footer {
   grid-area: footer;
-  background-color: #F27457;
+  background-color: #D5D971;
 }
 
 .site {
@@ -717,6 +850,10 @@ theme name: LAB4-ex2 - Ngoc Quynh Pham
 
 @media screen and (min-width: 800px) {
   .site {
+    grid-template-columns: 300px auto;
+    grid-template-areas: "header header" "sidebar main" "footer footer";
+  }
+  .home {
     grid-template-columns: 300px auto;
     grid-template-areas: "header header" "sidebar main" "footer footer";
   }

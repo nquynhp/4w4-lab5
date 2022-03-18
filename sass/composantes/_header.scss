@@ -1,34 +1,68 @@
+/*================================*/
+/*====== AJOUT COMMENTAIRE========*/
+/*================================*/
 .site__header {
     background-color: $color__background-header;
     color: $color__font-header;
+    // padding: 10px 20px 10px 40px;
     display: flex;
-    padding-left: 10px;
+    flex-direction: column;
 
-    .header__titre {
-      font-size: 3em;
-      font-family: $font__titre;
+    @media screen and (min-width: 200px){
+      flex-direction: row;
+      align-items: center;
+    }
+
+    &__titre{
+      display: flex;
+      align-items: center;
+
+      h1{
+        font-size: clamp(1rem, 4vw, 7rem);
+        font-family: $font__titre;
+        padding-left: 10px;
+      }
+    }
+
+    .site__header__titre{
+      flex: 1;
     }
 
     .header__titre:hover {
       color:  #C596D9;
     }
-
+  /*================================*/
+  /*====== AJOUT COMMENTAIRE========*/
+  /*================================*/
     @mixin description {
-      font-size: 1.5rem;
+      font-size: clamp(1rem, 2vw, 1rem);
       font-family: $font__main;
+      padding-left: 50px;
+      // justify-content: space-around;
     }
 
-    // .header__desc {
-    //   @description;
-    // }
   }
 
+  /*================================*/
+  /*====== AJOUT COMMENTAIRE========*/
+  /*================================*/
   .util{
     display: flex;
     flex-direction: column;
-    margin-left: auto;
+    align-items: center;
+
+    @media screen and (min-width : 900px){
+      margin-left: auto;
+      // width: 350px;
+      align-items: flex-end;
+    }
+
 
     .util__lien a svg{
-      color: red;
+      color: rgb(255, 0, 128);
     }
+  }
+
+  .header__description{
+    padding-left: 5%;
   }

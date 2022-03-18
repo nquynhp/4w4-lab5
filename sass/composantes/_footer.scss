@@ -1,58 +1,100 @@
-.site__footer {
-  &_colonne{
-    display: flex;
-    flex-direction: column;
-    border: 2px solid white;
-    flex: 0 0 30%;
-  }
 
-  &_ligne{
-    display: flex;
+.site__footer {
+  display : flex;
+  flex-direction: column;
+  &__colonne{
+    display : flex;
+    justify-content: space-between;
+    section {
+      display : flex;
+      flex-direction: column;
+      border : 1px solid #ddd;
+      flex : 0 0 30%;
+    }
+    .footer__article{}
+    .footer__lien{}
+    .footer__adresse{}
+  
+  } 
+
+  &__ligne{
+    display : flex;
     flex-direction: column;
     align-items: center;
   }
 
+}
 
-  font-family: $font__titre;
-  background-color: $color__background-footer;
-  padding: 20px;
-  border-top-right-radius: 5%;
-  justify-content:space-around;
-  gap: 10px;
-  display: flex;
-  &__menu{ // .site__footer__menu
-    display: flex;
-    flex-direction: row;
-    &__ul{ // .site__footer__menu__ul
-        display : flex;
-        flex: 1;
-        list-style-type: none;
-        justify-content: center;
-        flex-direction: column;
-        .menu-item{ // .site__footer__menu__ul .menu-item
-            margin : 10px 5px;
-            flex: 2;
-            flex-direction: column;
-          a{ // .site__footer__menu__ul .menu-item a
-            display : flex;
-            align-items: center;
-            padding : 3px;
-            svg { // .site__footer__menu__ul .menu-item a svg
-              color: #c596d9ce;
+
+
+
+.site__footer {
+    font-family: $font__titre;
+    background-color: $color__background-footer;
+    padding: 15px;
+
+    &__menu{ // .site__footer__menu
+
+      &__ul{ // .site__footer__menu__ul
+          display : flex;
+          list-style-type: none;
+          justify-content: center;
+          .menu-item { // .site__footer__menu__ul .menu-item
+              margin : 10px 5px;
+            a{ // .site__footer__menu__ul .menu-item a
+              display : flex;
+              align-items: center;
+              padding : 3px;
+              
             }
-            &:hover{
-              svg {
-                color: #F24405;
-              }
-            }
-          }
-        }
+          }    
+       }
     }
   }
-}
+
+  /*================================*/
+  /*====== AJOUT COMMENTAIRE========*/
+  /*================================*/
 .footer__titre,
 .footer__presentation,
 .footer__author {
-color: $color__font-footer;
-text-align: center;
+  color: $color__font-footer;
+  text-align: center;
+}
+
+.footer__sociaux{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer__auteur{
+  display: flex;
+  justify-content: center;
+  align-items:flex-start;
+  font-size: 12px;
+}
+
+.footer__adresse_college{
+  display: flex;
+  justify-content: center;
+  align-items:flex-start;
+  font-size: 12px;
+}
+
+
+/*================================*/
+/*====== AJOUT COMMENTAIRE========*/
+/*================================*/
+.footer__menu nav li::marker{
+  text-decoration: none;
+}
+
+.footer__menu nav ul{
+  display: flex;
+}
+
+.footer__menu nav li{
+  justify-content: space-around;
+  padding-right: 20px;
 }

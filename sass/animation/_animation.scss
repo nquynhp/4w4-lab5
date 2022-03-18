@@ -1,8 +1,12 @@
+/*=================================*/
+/*====== AJOUT COMMENTAIRE ========*/
+/*=================================*/
 .animation {
     display: flex;
     width: 90%;
     // border: 1px solid rgb(235, 125, 125);
     justify-content: space-around;
+    padding: 2%;
     
     &__bloc {
         display: flex;
@@ -11,29 +15,11 @@
         width: 100px;
         height: 100px;
         border-radius: 50%;
-        color: #401708;
-        background-color: #F27457;
+        color: #000000;
+        background-color: #ffcad8;
         animation: anim_bloc 1s forwards;
     }
 
-    // &__bloc:nth-of-type(1) {
-    //     transform: translateY(-100vh);
-    //     transition: transform 1s 3s;
-    // }
-    // &__bloc:nth-of-type(2) {
-    //     transform: translateY(100vh);
-    //     transition: transform 1s 3s;
-    // }
-    // &__bloc:nth-of-type(3) {
-    //     transform: translateX(-100vw);
-    //     transition: transform 1s 3s;
-    // }
-    // &__bloc:nth-of-type(4) {
-    //     transform: translateX(100vw);
-    // }
-    // &__bloc:nth-of-type(5) {
-    //     transform: translateX(-100vw);
-    // }
 
     @keyframes anim_bloc {
         0% {
@@ -48,5 +34,30 @@
             transform: translateX(0);
         }
     }
+}
 
+/*===========================================*/
+/*====== ANIMATION DU MENU PRINCIPAL ========*/
+/*===========================================*/
+.menu{
+    padding-left: 15%;
+    animation: anim_menu_principal .5s ease-in-out;
+}
+
+@keyframes anim_menu_principal{
+    0%{
+        padding-left: 25%;
+    }
+
+    50%{
+        padding-left: 30%;
+    }
+
+    80%{
+        padding-left: 0%;
+    }
+
+    100%{
+        padding-left: 15%;
+    }
 }
