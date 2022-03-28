@@ -8,7 +8,6 @@
             <?php if (have_posts()):
                 while (have_posts()): the_post(); ?>
                 <article class="formation__cours">
-                
                         <?php
                         $titre = get_the_title();
                         $titreFiltreCours = substr($titre, 7, -6);

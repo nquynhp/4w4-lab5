@@ -1,9 +1,9 @@
 @charset "UTF-8";
 /*
-theme name: 4w4-tp1 Ngoc Quynh Pham
+theme name: lab5 Ngoc Quynh Pham
 Author: Ngoc Quynh Pham
 Author URL: https://github.com/nquynhp
-Description: Chacune des étapes de développement see retrouvera sur gitHub à l'adresse : https://github.com/nquynhp
+Description: Ce projet est le TP1 où j'ai produit un nouveau thème, ajouté des animations, etc. Le site se retrouvera sur gitHub à l'adresse : https://github.com/nquynhp/2022-4w4-tp1.git
 Version: 1.0.0
 License: GNU General Public License v2 or later
 License URI: LICENSE
@@ -417,12 +417,51 @@ COMPOSANTES
   box-shadow: #7a7a6e 1px -1px 10px;
 }
 
-/*================================*/
-/*====== AJOUT COMMENTAIRE========*/
-/*================================*/
+/*===================================================*/
+/*====== coeur ========*/
+/*==================================================*/
+.coeur {
+  background-color: #ff006a;
+  display: inline-block;
+  height: 30px;
+  margin: 0 30px;
+  position: relative;
+  top: 0;
+  transform: rotate(-45deg);
+  width: 30px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.coeur:before,
+.coeur:after {
+  content: "";
+  background-color: #ff006a;
+  border-radius: 50%;
+  height: 30px;
+  position: absolute;
+  width: 30px;
+}
+
+.coeur:before {
+  top: -15px;
+  left: 0;
+}
+
+.coeur:after {
+  left: 15px;
+  top: 0;
+}
+
+/*===================================================*/
+/*====== La page qui affiche tous les cours ========*/
+/*==================================================*/
 .formation {
   display: flex;
   flex-direction: column;
+  /*Chaque boîte de cours*/
+  /*Lorsqu'on survole un des rectangles de cours*/
+  /*Lorsque que le lien du cours a déjà été survolé*/
 }
 
 .formation__titre {
@@ -447,6 +486,7 @@ COMPOSANTES
   flex-direction: column;
   width: 100%;
   padding: 10px;
+  transition: transform .5s;
 }
 
 @media screen and (min-width: 800px) {
@@ -459,6 +499,10 @@ COMPOSANTES
   .formation__cours {
     width: 30%;
   }
+}
+
+.formation__cours:hover {
+  transform: translate(5px, -10px);
 }
 
 .formation__cours a:visited {
@@ -495,11 +539,24 @@ COMPOSANTES
   height: 45px;
 }
 
+/*Modification des images dans la section Cours*/
+.formation__cours {
+  display: flex;
+}
+
+.article__contenu__figure {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-self: center;
+  justify-self: center;
+}
+
 /*================================*/
 /*====== AJOUT COMMENTAIRE========*/
 /*================================*/
 .site__header {
-  background-color: #D5D971;
+  background-color: #d6d971;
   color: #F2EBD5;
   display: flex;
   flex-direction: column;
@@ -585,13 +642,14 @@ COMPOSANTES
   list-style-type: none;
   margin: 0;
   padding: 0;
-  padding-left: 15%;
-  padding-top: 15%;
 }
 
 .menu-item {
   margin: 0;
   padding: 0;
+  /***************/
+  /*******EUHHHHHHHHHH WHY THE FUCK********/
+  /***************/
 }
 
 .menu-item a {
@@ -599,13 +657,22 @@ COMPOSANTES
   text-decoration: none;
   padding: 4px;
   background-color: #F2EBD5;
+  transition: all .5s ease-in-out;
 }
 
 .menu-item a:hover {
   background-color: #D94E73;
+  transform: translate(5px);
 }
 
-/* ----------------------------------------- */
+.menu-item li {
+  padding-left: auto;
+}
+
+.menu-item li:hover {
+  padding-left: 20px;
+}
+
 .site__footer {
   display: flex;
   flex-direction: column;
@@ -667,6 +734,10 @@ COMPOSANTES
   align-items: center;
 }
 
+.wp-social-link {
+  transform: translateY(5px);
+}
+
 .footer__auteur {
   display: flex;
   justify-content: center;
@@ -690,6 +761,7 @@ COMPOSANTES
 
 .footer__menu nav ul {
   display: flex;
+  list-style-type: none;
 }
 
 .footer__menu nav li {
@@ -737,11 +809,18 @@ COMPOSANTES
   justify-content: center;
 }
 
+.recherche__bouton {
+  width: 20%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+}
+
 /* ---------------------------------------------------------
 ANIMATION
 --------------------------------------------------------- */
 /*=================================*/
-/*====== AJOUT COMMENTAIRE ========*/
+/*====== ANIMATION DU BLOC ========*/
 /*=================================*/
 .animation {
   display: flex;
@@ -779,7 +858,7 @@ ANIMATION
 /*===========================================*/
 .menu {
   padding-left: 15%;
-  animation: anim_menu_principal .5s ease-in-out;
+  animation: anim_menu_principal .85s ease-in-out;
 }
 
 @keyframes anim_menu_principal {
@@ -797,11 +876,42 @@ ANIMATION
   }
 }
 
+/*===================================*/
+/*====== ANIMATION DU COEUR ========*/
+/*==================================*/
+.coeur {
+  animation: animCoeur 1.2s infinite;
+}
+
+@keyframes animCoeur {
+  0% {
+    transform: rotate(-45deg) scale(0.8);
+  }
+  15% {
+    transform: rotate(-45deg) scale(1);
+  }
+  25% {
+    transform: rotate(-45deg) scale(0.8);
+  }
+  10% {
+    transform: rotate(-45deg) scale(1.1);
+  }
+  45% {
+    transform: rotate(-45deg) scale(0.8);
+  }
+  100% {
+    transform: rotate(-45deg) scale(0.8);
+  }
+}
+
+/*===================================*/
+/*====== ANIMATION DU CLIP PATH ========*/
+/*==================================*/
 /* ---------------------------------------------------------
 LAYOUT
 --------------------------------------------------------- */
 /*
-theme name: LAB4-ex2 - Ngoc Quynh Pham
+theme name: TP1 - Ngoc Quynh Pham
 */
 .site {
   background-color: #F2EBD5;
@@ -824,7 +934,7 @@ theme name: LAB4-ex2 - Ngoc Quynh Pham
 
 .site__header {
   grid-area: header;
-  background-color: rgba(213, 217, 113, 0.5);
+  background-color: #d6d971;
 }
 
 .site__barre {

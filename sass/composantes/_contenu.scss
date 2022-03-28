@@ -123,3 +123,16 @@
     width: 45px;
     height: 45px;
 }
+
+/*Modification des images dans la section Cours*/
+.formation__cours{
+    display: flex;
+}
+
+.article__contenu__figure{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    justify-self: center;
+}

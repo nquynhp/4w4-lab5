@@ -94,20 +94,20 @@
 /*===================================*/
 /*====== ANIMATION DU CLIP PATH ========*/
 /*==================================*/
-  .home::after{
-    animation: animClipPath 2s infinite alternate;
-  }
+//   .home::after{
+//     animation: animClipPath 2s infinite alternate;
+//   }
 
-  @keyframes animClipPath{
-    0%{
-        transform: scale(1);
-    }
+//   @keyframes animClipPath{
+//     0%{
+//         transform: scale(1);
+//     }
 
-    50%{
-        transform: scale(1.5);
-    }
+//     50%{
+//         transform: scale(1.5);
+//     }
 
-    100%{
-        transform: scale(1.2);
-    }
-}
+//     100%{
+//         transform: scale(1.2);
+//     }
+// }
