@@ -9,4 +9,4 @@ Cet exercice nous a permis d'introduire la structure d'un thème Wordpress. Voic
 -Les modèle principal est : «index.php»
 
 Pour modifier readme.md
-https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax
+https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax# 4w4-lab5
