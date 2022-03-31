@@ -1,0 +1,29 @@
+.menu-menu_accueil-container{ //nav
+
+.menu{ //ul
+    display: flex;
+
+    .menu-item{ //li
+        background-color: $color__bouton__background;
+        margin: 0 15px 0 15px;
+        padding: 10px;
+        border-radius: 5px;
+
+        a{
+            background-color: $color__bouton__background;
+            color: $color__bouton__color;
+            font-size: 2rem;
+            text-decoration: none;
+
+            .menu-item-description{ //span
+                font-size: 1rem;
+            }
+
+            &:hover{
+                background-color: $color__bouton__background--hover;
+            }
+        }
+    }
+}
+
+}

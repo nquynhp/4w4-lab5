@@ -865,6 +865,32 @@ COMPOSANTES
   justify-content: center;
 }
 
+.menu-menu_accueil-container .menu {
+  display: flex;
+}
+
+.menu-menu_accueil-container .menu .menu-item {
+  background-color: #B4B8BF;
+  margin: 0 15px 0 15px;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.menu-menu_accueil-container .menu .menu-item a {
+  background-color: #B4B8BF;
+  color: #B4B8BF;
+  font-size: 2rem;
+  text-decoration: none;
+}
+
+.menu-menu_accueil-container .menu .menu-item a .menu-item-description {
+  font-size: 1rem;
+}
+
+.menu-menu_accueil-container .menu .menu-item a:hover {
+  background-color: #979DA6;
+}
+
 /* ---------------------------------------------------------
 ANIMATION
 --------------------------------------------------------- */

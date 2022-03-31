@@ -10,6 +10,11 @@
                 <div class="animation__bloc">4</div>
                 <div class="animation__bloc">5</div> -->
         <!-- </section> -->
+        
+        <?php
+                wp_nav_menu(array("menu"=> "menu_accueil",
+                                "container" =>"nav"));
+        ?>
 
         <!-- COEUR -->
         <div class="coeur"></div>
