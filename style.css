@@ -388,7 +388,7 @@ a:hover, a:active {
 }
 
 .site__header a {
-  color: #D94E73;
+  color: #F2134F;
 }
 
 .site__header a:visited {
@@ -413,7 +413,7 @@ COMPOSANTES
 .principal {
   margin: 20px;
   padding: 10px 15px;
-  background-color: #ff5d88;
+  background-color: #F2F2F2;
   border-radius: 8px;
   box-shadow: #7a7a6e 1px -1px 10px;
 }
@@ -503,7 +503,7 @@ COMPOSANTES
 }
 
 .formation__cours {
-  background-color: #D5D971;
+  background-color: #F2527D;
   box-shadow: #f2ebd5c9 1px -2px 10px;
   border-radius: 5px;
   background-position: 95% 98%;
@@ -583,8 +583,8 @@ COMPOSANTES
 /*====== AJOUT COMMENTAIRE========*/
 /*================================*/
 .site__header {
-  background-color: #d6d971;
-  color: #F2EBD5;
+  background-color: #F2134F;
+  color: #F2F2F2;
   display: flex;
   flex-direction: column;
   /*================================*/
@@ -674,9 +674,6 @@ COMPOSANTES
 .menu-item {
   margin: 0;
   padding: 0;
-  /***************/
-  /*******EUHHHHHHHHHH WHY THE FUCK********/
-  /***************/
 }
 
 .menu-item a {
@@ -749,7 +746,7 @@ COMPOSANTES
 
 .site__footer {
   font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
-  background-color: #D5D971;
+  background-color: #F2134F;
   padding: 15px;
 }
 
@@ -986,12 +983,12 @@ theme name: TP1 - Ngoc Quynh Pham
 
 .site__header {
   grid-area: header;
-  background-color: #d6d971;
+  background-color: #F2134F;
 }
 
 .site__barre {
   grid-area: sidebar;
-  background-color: #EDF25C;
+  background-color: #F299B1;
 }
 
 .site__main {
@@ -1001,7 +998,7 @@ theme name: TP1 - Ngoc Quynh Pham
 
 .site__footer {
   grid-area: footer;
-  background-color: #D5D971;
+  background-color: #F2134F;
 }
 
 .site {

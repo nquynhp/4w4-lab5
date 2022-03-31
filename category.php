@@ -1,6 +1,7 @@
 <?php get_header() ?>
 <main class="principal">
     <h1>----- category.php -----</h1>
+    <?php if(is_category(array('cours', 'creation-3d', 'web', 'jeu', 'design', 'video', 'utilitaire'))): ?>
     <sction class="formation"></sction>
     <?php wp_nav_menu(array(
                 "menu"=>"categorie_cours",
@@ -14,28 +15,12 @@
         <div class="formation__liste">
             <?php if (have_posts()):
                 while (have_posts()): the_post(); ?>
-                <?php 
-                    $categories = get_the_category();
-                    // var_dump($categories);
-                    // echo $categories[1] -> slug;
-                ?>
-                <article class="formation__cours <?php echo $categories[1] -> slug; ?>">
-                        <?php
-                        $titre = get_the_title();
-                        $titreFiltreCours = substr($titre, 7, -6);
-                        $nbHeures = substr($titre, -6);
-                        $sigleCours = substr($titre, 0, 7);
-                        $descCours = get_the_excerpt();
-                        ?>
-                        <a href="<?php the_permalink(); ?>"> <?php echo $titreFiltreCours ?></a>
-                        <h3 class="cours__titre"> <?= $titreFiltreCours; ?></h3>
-                        <div class="cours__nbre-heure"><?= $nbHeures; ?></div>
-                        <p class="cours__sigle"><?= $sigleCours; ?> </p>
-                        <p class="cours__desc"> <?= $descCours; ?></p>
-                    </article>
+
+                <?php get_template_part('gabarit/content', 'cours'); ?>
                 <?php endwhile ?>
                 <?php endif ?>
         </div>
     </section>
+    <?php endif; //if (is_category('cours')); ?>
 </main>
 <?php get_footer() ?>
