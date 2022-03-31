@@ -1,7 +1,7 @@
 <?php get_header() ?>
 <main class="principal">
     <h1>----- category.php -----</h1>
-    <?php if(is_category(array('cours', 'creation-3d', 'web', 'jeu', 'design', 'video', 'utilitaire'))): ?>
+    <?php  ?>
     <sction class="formation"></sction>
     <?php wp_nav_menu(array(
                 "menu"=>"categorie_cours",
@@ -16,11 +16,15 @@
             <?php if (have_posts()):
                 while (have_posts()): the_post(); ?>
 
-                <?php get_template_part('gabarit/content', 'cours'); ?>
+                <?php 
+                    if(is_category(array('cours', 'creation-3d', 'web', 'jeu', 'design', 'video', 'utilitaire'))):
+                        get_template_part('gabarit/content', 'cours');
+                    else:
+                        get_template_part('gabarit/content', 'macrame');
+                    endif; ?>
                 <?php endwhile ?>
                 <?php endif ?>
         </div>
     </section>
-    <?php endif; //if (is_category('cours')); ?>
 </main>
 <?php get_footer() ?>
