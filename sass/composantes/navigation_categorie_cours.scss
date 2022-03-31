@@ -1,0 +1,25 @@
+/**************************************************************/
+/************** Navigation catégorie cours ********************/
+/*************************************************************/
+
+.menu-categorie_cours-container{ //nav
+    
+    .menu{ // ul
+        display: flex;
+        background-color: #3A3940;
+        .menu-item{ // li
+            margin: 5px 10px;
+            a{
+                color: $color__bouton__color;
+            }
+            &:hover a{
+                background-color: $color__bouton__background--hover;
+
+                a{
+                    color: $color__bouton__color--hover;
+                }
+            }
+            
+        }
+    }
+}

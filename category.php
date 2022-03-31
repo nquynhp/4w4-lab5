@@ -1,5 +1,12 @@
 <?php get_header() ?>
 <main class="principal">
+    <h1>----- category.php -----</h1>
+    <sction class="formation"></sction>
+    <?php wp_nav_menu(array(
+                "menu"=>"categorie_cours",
+                "container"=>"nav"
+    )) ?>
+
     <h1>Liste des cours</h1>
     <!-- le fichier doit exactement comme spécifier dans wordpress, soit category-cours(nom de catégorie) -->
     <section class="formation">
@@ -7,7 +14,12 @@
         <div class="formation__liste">
             <?php if (have_posts()):
                 while (have_posts()): the_post(); ?>
-                <article class="formation__cours">
+                <?php 
+                    $categories = get_the_category();
+                    // var_dump($categories);
+                    // echo $categories[1] -> slug;
+                ?>
+                <article class="formation__cours <?php echo $categories[1] -> slug; ?>">
                         <?php
                         $titre = get_the_title();
                         $titreFiltreCours = substr($titre, 7, -6);

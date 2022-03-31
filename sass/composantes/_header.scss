@@ -16,7 +16,7 @@
       display: flex;
       align-items: center;
 
-      h1{
+      h1{ //titre principal du site
         font-size: clamp(1rem, 4vw, 7rem);
         font-family: $font__titre;
         padding-left: 10px;

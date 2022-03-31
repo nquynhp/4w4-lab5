@@ -17,6 +17,7 @@ VARIABLES
 /* ---------------- LIENS FOOTER */
 /* ---------------- LIENS HEADER */
 /* ---------------- FONT */
+/* ---------------- Bouton / lien menu*/
 /* ------------------------------------- points de rupture des media queries */
 /* ---------------------------------------------------------
 INITIALISATION
@@ -477,10 +478,36 @@ COMPOSANTES
   flex-wrap: wrap;
 }
 
+.formation__liste .web {
+  background-image: url("https://s2.svgbox.net/octicons.svg?ic=globe&color=000");
+}
+
+.formation__liste .jeu {
+  background-image: url("https://s2.svgbox.net/materialui.svg?ic=games");
+}
+
+.formation__liste .design {
+  background-image: url("https://s2.svgbox.net/materialui.svg?ic=color_lens");
+}
+
+.formation__liste .creation-3d {
+  background-image: url("https://s2.svgbox.net/materialui.svg?ic=view_in_ar");
+}
+
+.formation__liste .utilitaire {
+  background-image: url("https://s2.svgbox.net/octicons.svg?ic=tools-bold");
+}
+
+.formation__liste .video {
+  background-image: url("https://s2.svgbox.net/octicons.svg?ic=device-camera-video");
+}
+
 .formation__cours {
   background-color: #D5D971;
   box-shadow: #f2ebd5c9 1px -2px 10px;
   border-radius: 5px;
+  background-position: 95% 98%;
+  background-repeat: no-repeat;
   margin: 10px;
   display: flex;
   flex-direction: column;
@@ -671,6 +698,30 @@ COMPOSANTES
 
 .menu-item li:hover {
   padding-left: 20px;
+}
+
+/**************************************************************/
+/************** Navigation catégorie cours ********************/
+/*************************************************************/
+.menu-categorie_cours-container .menu {
+  display: flex;
+  background-color: #3A3940;
+}
+
+.menu-categorie_cours-container .menu .menu-item {
+  margin: 5px 10px;
+}
+
+.menu-categorie_cours-container .menu .menu-item a {
+  color: #B4B8BF;
+}
+
+.menu-categorie_cours-container .menu .menu-item:hover a {
+  background-color: #979DA6;
+}
+
+.menu-categorie_cours-container .menu .menu-item:hover a a {
+  color: #979DA6;
 }
 
 .site__footer {
