@@ -10,7 +10,7 @@
 /*====== coeur ========*/
 /*==================================================*/
 .coeur {
-    background-color: rgb(255, 0, 106);
+    background-color: #ffcad8;
     display: inline-block;
     height: 30px;
     margin: 0 30px;
@@ -25,7 +25,7 @@
   .coeur:before,
   .coeur:after {
     content: "";
-    background-color: rgb(255, 0, 106);
+    background-color: #ffcad8;
     border-radius: 50%;
     height: 30px;
     position: absolute;
@@ -163,4 +163,11 @@
     align-items: center;
     align-self: center;
     justify-self: center;
+}
+
+/* Ligne au dessus des descriptions */
+hr{
+    background-color: #ffcad8;
+    padding: 3px;
+
 }

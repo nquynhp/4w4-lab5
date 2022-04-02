@@ -3,7 +3,7 @@
 theme name: lab5 Ngoc Quynh Pham
 Author: Ngoc Quynh Pham
 Author URL: https://github.com/nquynhp
-Description: Ce projet est le TP1 où j'ai produit un nouveau thème, ajouté des animations, etc. Le site se retrouvera sur gitHub à l'adresse : https://github.com/nquynhp/2022-4w4-tp1.git
+Description: Ce site est le lab5 pour le cours 4W4. Le site se retrouvera sur gitHub à l'adresse : https://github.com/nquynhp/4w4-lab5.git
 Version: 1.0.0
 License: GNU General Public License v2 or later
 License URI: LICENSE
@@ -372,11 +372,11 @@ a:hover, a:active {
 }
 
 .site__footer a:visited {
-  color: #D94E73;
+  color: #ffcad8;
 }
 
 .site__footer a:hover, .site__footer a:focus, .site__footer a:active {
-  color: #70722f;
+  color: #851533;
 }
 
 .site__footer a:focus {
@@ -388,15 +388,15 @@ a:hover, a:active {
 }
 
 .site__header a {
-  color: #F2134F;
+  color: #030303;
 }
 
 .site__header a:visited {
-  color: #EDF25C;
+  color: #ffcad8;
 }
 
 .site__header a:hover, .site__header a:focus, .site__header a:active {
-  color: #70722f;
+  color: #851533;
 }
 
 .site__header a:focus {
@@ -422,7 +422,7 @@ COMPOSANTES
 /*====== coeur ========*/
 /*==================================================*/
 .coeur {
-  background-color: #ff006a;
+  background-color: #ffcad8;
   display: inline-block;
   height: 30px;
   margin: 0 30px;
@@ -437,7 +437,7 @@ COMPOSANTES
 .coeur:before,
 .coeur:after {
   content: "";
-  background-color: #ff006a;
+  background-color: #ffcad8;
   border-radius: 50%;
   height: 30px;
   position: absolute;
@@ -541,7 +541,7 @@ COMPOSANTES
 /*================================*/
 .cours__titre {
   font-size: 1.5rem;
-  color: #f82d63;
+  color: #f5aabe;
   margin: 5px 0px;
 }
 
@@ -579,12 +579,18 @@ COMPOSANTES
   justify-self: center;
 }
 
+/* Ligne au dessus des descriptions */
+hr {
+  background-color: #ffcad8;
+  padding: 3px;
+}
+
 /*================================*/
 /*====== AJOUT COMMENTAIRE========*/
 /*================================*/
 .site__header {
   background-color: #F2134F;
-  color: #F2F2F2;
+  color: #ffcad8;
   display: flex;
   flex-direction: column;
   /*================================*/
@@ -635,7 +641,7 @@ COMPOSANTES
 }
 
 .util .util__lien a svg {
-  color: #ff0080;
+  color: #ffcad8;
 }
 
 .header__description {
@@ -680,7 +686,7 @@ COMPOSANTES
   display: block;
   text-decoration: none;
   padding: 4px;
-  background-color: #F2EBD5;
+  background-color: #ffffff;
   transition: all .5s ease-in-out;
 }
 
@@ -710,15 +716,15 @@ COMPOSANTES
 }
 
 .menu-categorie_cours-container .menu .menu-item a {
-  color: #B4B8BF;
+  color: #F299B1;
 }
 
 .menu-categorie_cours-container .menu .menu-item:hover a {
-  background-color: #979DA6;
+  background-color: #f9e08e;
 }
 
 .menu-categorie_cours-container .menu .menu-item:hover a a {
-  color: #979DA6;
+  color: #851533;
 }
 
 .site__footer {
@@ -870,15 +876,15 @@ COMPOSANTES
 }
 
 .menu-menu_accueil-container .menu .menu-item {
-  background-color: #B4B8BF;
+  background-color: #D94E73;
   margin: 0 15px 0 15px;
   padding: 10px;
   border-radius: 5px;
 }
 
 .menu-menu_accueil-container .menu .menu-item a {
-  background-color: #B4B8BF;
-  color: #B4B8BF;
+  background-color: #D94E73;
+  color: #F299B1;
   font-size: 2rem;
   text-decoration: none;
 }
@@ -888,7 +894,7 @@ COMPOSANTES
 }
 
 .menu-menu_accueil-container .menu .menu-item a:hover {
-  background-color: #979DA6;
+  background-color: #f9e08e;
 }
 
 /* ---------------------------------------------------------
@@ -979,9 +985,6 @@ ANIMATION
   }
 }
 
-/*===================================*/
-/*====== ANIMATION DU CLIP PATH ========*/
-/*==================================*/
 /* ---------------------------------------------------------
 LAYOUT
 --------------------------------------------------------- */
@@ -989,7 +992,7 @@ LAYOUT
 theme name: TP1 - Ngoc Quynh Pham
 */
 .site {
-  background-color: #F2EBD5;
+  background-color: #ffffff;
   font-family: monaco, Consolas, "Lucida Console";
 }
 
