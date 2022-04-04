@@ -1,9 +1,9 @@
 @charset "UTF-8";
 /*
-theme name: lab5 Ngoc Quynh Pham
+theme name: 2022-4W4 Exercice #3 Ngoc Quynh Pham
 Author: Ngoc Quynh Pham
 Author URL: https://github.com/nquynhp
-Description: Ce site est le lab5 pour le cours 4W4. Le site se retrouvera sur gitHub à l'adresse : https://github.com/nquynhp/4w4-lab5.git
+Description: Ce site est l'exercice 3 pour le cours 4W4. Le site se retrouvera sur gitHub à l'adresse : https://github.com/nquynhp/4w4-lab5.git
 Version: 1.0.0
 License: GNU General Public License v2 or later
 License URI: LICENSE
@@ -583,6 +583,7 @@ COMPOSANTES
 hr {
   background-color: #ffcad8;
   padding: 3px;
+  border: none;
 }
 
 /*================================*/
@@ -873,6 +874,11 @@ hr {
 
 .menu-menu_accueil-container .menu {
   display: flex;
+  justify-content: space-around;
+}
+
+.menu-menu_accueil-container .menu .accueil__cours .menu-item-icone {
+  background-image: url("https://s2.svgbox.net/loaders.svg?ic=puff&color=000000");
 }
 
 .menu-menu_accueil-container .menu .menu-item {
@@ -880,17 +886,36 @@ hr {
   margin: 0 15px 0 15px;
   padding: 10px;
   border-radius: 5px;
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .menu-menu_accueil-container .menu .menu-item a {
   background-color: #D94E73;
   color: #F299B1;
-  font-size: 2rem;
+  font-size: clamp(1rem, 2vw, 2.2rem);
   text-decoration: none;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
 }
 
 .menu-menu_accueil-container .menu .menu-item a .menu-item-description {
-  font-size: 1rem;
+  font-size: clamp(0.8rem, 1.5vw, 1rem);
+}
+
+.menu-menu_accueil-container .menu .menu-item a .menu-item-icone {
+  border: 1px solid pink;
+  width: 2rem;
+  height: 2rem;
+  background-repeat: no-repeat;
+  background-position: center center;
+  margin-top: auto;
+  z-index: 10;
 }
 
 .menu-menu_accueil-container .menu .menu-item a:hover {

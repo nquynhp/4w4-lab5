@@ -1,5 +1,9 @@
 <?php get_header() ?>
 <main class="principal">
+    
+    <!-- Création d'un curseur -->
+    <div class="curseur"></div>
+
 <h1>------INDEX------</h1>
     <section class="formation">
         <h2 class="formation__titre">Liste des cours du programme TIM</h2>
@@ -24,4 +28,7 @@
         </div>
     </section>
 </main>
+
+
+
 <?php get_footer() ?>
