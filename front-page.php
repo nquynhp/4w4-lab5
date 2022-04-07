@@ -1,18 +1,15 @@
 <?php get_header() ?>
 <main class="principal">
-<h1>Page d'accueil</h1>
-        <!-- <section class="animation">
-                <div>1</div> -->
-                <!-- div.animation__bloc{$}*5 -->
-                <!-- <div class="animation__bloc">1</div>
-                <div class="animation__bloc">2</div>
-                <div class="animation__bloc">3</div>
-                <div class="animation__bloc">4</div>
-                <div class="animation__bloc">5</div> -->
-        <!-- </section> -->
-        
+<h1>Les études en TIM</h1>
         <?php
+        /******************************************* menu accueil */
                 wp_nav_menu(array("menu"=> "menu_accueil",
+                                "container" =>"nav"));
+        ?>
+
+        <?php
+        /******************************************* menu evenement */
+                wp_nav_menu(array("menu"=> "evenement",
                                 "container" =>"nav"));
         ?>
 

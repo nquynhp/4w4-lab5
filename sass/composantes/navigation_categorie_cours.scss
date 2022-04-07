@@ -9,17 +9,30 @@
         background-color: #3A3940;
         .menu-item{ // li
             margin: 5px 10px;
+
+            &hover{
+                transform: translateY(10px);
+            }
+
             a{
                 color: $color__bouton__color;
             }
+
+
             &:hover a{
                 background-color: $color__bouton__background--hover;
 
                 a{
                     color: $color__bouton__color--hover;
                 }
+            } //fin de menu-item
+
+            .current-menu-item{
+                background-color: $color__bouton-background--current;
+                a{
+                    color: $color__bouton_color--current;
+                }
             }
-            
         }
     }
 }

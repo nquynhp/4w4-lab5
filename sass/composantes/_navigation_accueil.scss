@@ -1,58 +1,58 @@
-.menu-menu_accueil-container{ //nav
+.menu-accueil-container,
+.menu-evenement-container { // nav
 
-.menu{ //ul
-    display: flex;
-    justify-content: space-around;
 
-    .accueil__cours .menu-item-icone{ //li
-        background-image: url('https://s2.svgbox.net/loaders.svg?ic=puff&color=000000');
-    }
+    .menu { // ul
 
-    // .accueil__profs{ //li
-
-    // }
-
-    .menu-item{ //li
-        background-color: $color__bouton__background;
-        margin: 0 15px 0 15px;
-        padding: 10px;
-        border-radius: 5px;
-        width: 20%;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
+        display : flex;
+        justify-content: space-around;
         align-items: center;
 
-        a{
-            background-color: $color__bouton__background;
-            color: $color__bouton__color;
-            font-size: clamp(1rem, 2vw, 2.2rem);
-            text-decoration: none;
+        .menu-item-icone{//li
+            background-image: url('https://s2.svgbox.net/materialui.svg?ic=school&color=000');
+        }
+        .accueil__prof .menu-item-icone{ // li
+        }
+        .accueil__aide .menu-item-icone{ //li
+        }
+
+        .accueil__etudiant .menu-item-icone{ //li
+
+        }
+
+
+        .menu-item { // li
+            display : flex;
             flex-direction: column;
             justify-content: space-between;
             align-items: center;
-            height: 100%;
+            background-color: $color__bouton__background;
+            //width: 20%;
+            flex : 0 0 20%;
+            height : 175px;
 
-            .menu-item-description{ //span
-                font-size: clamp(.8rem, 1.5vw, 1rem);
-            }
+            a{
+                display : flex;
+                flex-direction: column;
+                align-items: center;
+                font-size: clamp(1rem, 2vw, 2.2rem);
+                color: $color__bouton__color;
+                height : 100%;
+                .menu-item-description { // span
+                    font-size: clamp(.8rem, 1.5vw, 1rem);
 
-            .menu-item-icone{ //span
-                border: 1px solid pink;
-                width: 2rem;
-                height: 2rem;
-                background-repeat: no-repeat;
-                background-position: center center;
-                margin-top: auto;
-                z-index: 10;
-            }
+                }
+                .menu-item-icone{
+                    width : 2rem;
+                    height : 2rem;
+                    background-repeat: no-repeat;
+                    background-position: center center;
+                    background-size: cover;
+                    margin-top : auto;
+                }
 
-            &:hover{
-                background-color: $color__bouton__background--hover;
             }
-            
         }
-    }
-}
 
-}
+    }
+} 

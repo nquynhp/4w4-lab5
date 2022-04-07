@@ -716,6 +716,10 @@ hr {
   margin: 5px 10px;
 }
 
+.menu-categorie_cours-container .menu .menu-itemhover {
+  transform: translateY(10px);
+}
+
 .menu-categorie_cours-container .menu .menu-item a {
   color: #F299B1;
 }
@@ -872,54 +876,52 @@ hr {
   justify-content: center;
 }
 
-.menu-menu_accueil-container .menu {
+.menu-accueil-container .menu,
+.menu-evenement-container .menu {
   display: flex;
   justify-content: space-around;
+  align-items: center;
 }
 
-.menu-menu_accueil-container .menu .accueil__cours .menu-item-icone {
-  background-image: url("https://s2.svgbox.net/loaders.svg?ic=puff&color=000000");
+.menu-accueil-container .menu .menu-item-icone,
+.menu-evenement-container .menu .menu-item-icone {
+  background-image: url("https://s2.svgbox.net/materialui.svg?ic=school&color=000");
 }
 
-.menu-menu_accueil-container .menu .menu-item {
-  background-color: #D94E73;
-  margin: 0 15px 0 15px;
-  padding: 10px;
-  border-radius: 5px;
-  width: 20%;
+.menu-accueil-container .menu .menu-item,
+.menu-evenement-container .menu .menu-item {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+  background-color: #D94E73;
+  flex: 0 0 20%;
+  height: 175px;
 }
 
-.menu-menu_accueil-container .menu .menu-item a {
-  background-color: #D94E73;
-  color: #F299B1;
-  font-size: clamp(1rem, 2vw, 2.2rem);
-  text-decoration: none;
+.menu-accueil-container .menu .menu-item a,
+.menu-evenement-container .menu .menu-item a {
+  display: flex;
   flex-direction: column;
-  justify-content: space-between;
   align-items: center;
+  font-size: clamp(1rem, 2vw, 2.2rem);
+  color: #F299B1;
   height: 100%;
 }
 
-.menu-menu_accueil-container .menu .menu-item a .menu-item-description {
+.menu-accueil-container .menu .menu-item a .menu-item-description,
+.menu-evenement-container .menu .menu-item a .menu-item-description {
   font-size: clamp(0.8rem, 1.5vw, 1rem);
 }
 
-.menu-menu_accueil-container .menu .menu-item a .menu-item-icone {
-  border: 1px solid pink;
+.menu-accueil-container .menu .menu-item a .menu-item-icone,
+.menu-evenement-container .menu .menu-item a .menu-item-icone {
   width: 2rem;
   height: 2rem;
   background-repeat: no-repeat;
   background-position: center center;
+  background-size: cover;
   margin-top: auto;
-  z-index: 10;
-}
-
-.menu-menu_accueil-container .menu .menu-item a:hover {
-  background-color: #f9e08e;
 }
 
 /* ---------------------------------------------------------

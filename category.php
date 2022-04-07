@@ -3,10 +3,19 @@
     <h1>----- category.php -----</h1>
     <?php  ?>
     <sction class="formation"></sction>
+    <a href="?cletri=title&ordre=asc">TRI ASCENDANT</a>
+    <a href="?cletri=title&ordre=desc">TRI DESCENDANT</a>
+
     <?php wp_nav_menu(array(
                 "menu"=>"categorie_cours",
                 "container"=>"nav"
     )) ?>
+    <?php     
+    $slug_categorie_de_la_page = trouve_la_categorie(array('cours', 'web', 'jeu', 'design', 'utilitaire', 'video'));
+    $ma_categorie = get_category_by_slug($slug_categorie_de_la_page);
+    echo "<h2>" . $ma_categorie->name . "</h2>";
+    ?>
+
 
     <h1>Liste des cours</h1>
     <!-- le fichier doit exactement comme spécifier dans wordpress, soit category-cours(nom de catégorie) -->
