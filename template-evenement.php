@@ -16,5 +16,7 @@
         <?php the_title() ?>
         <?php the_content() ?>        
    <?php endif ?>
+
+   <img src="images/ecole.jpg">
 </main>
 <?php get_footer() ?>

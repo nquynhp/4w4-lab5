@@ -21,7 +21,6 @@
         <div class="coeur"></div>
 
         <div style="width:50%;height:0;padding-bottom:40%;position:relative;"><iframe src="https://giphy.com/embed/xT0GqjBCkO9BEiSEOk" width="90%" height="90%" style="position:absolute" frameBorder="0" class="giphy-embed" allowFullScreen></iframe></div>
-
     
         <?php if (have_posts()): the_post() ?>
 
