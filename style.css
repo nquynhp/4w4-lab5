@@ -533,7 +533,7 @@ COMPOSANTES
 }
 
 .formation__cours a:visited {
-  color: #006cc5;
+  color: #ffcad8;
 }
 
 /*================================*/
@@ -672,7 +672,7 @@ hr {
 }
 
 .menu {
-  background-color: #F2EBD5;
+  background-color: #fa90acb6;
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -730,6 +730,14 @@ hr {
 
 .menu-categorie_cours-container .menu .menu-item:hover a a {
   color: #851533;
+}
+
+.menu-categorie_cours-container .menu .menu-item .current-menu-item {
+  background-color: #0e53a2;
+}
+
+.menu-categorie_cours-container .menu .menu-item .current-menu-item a {
+  color: #abc6f1;
 }
 
 .site__footer {
@@ -895,6 +903,7 @@ hr {
   justify-content: space-between;
   align-items: center;
   background-color: #D94E73;
+  background-color: red;
   flex: 0 0 20%;
   height: 175px;
 }

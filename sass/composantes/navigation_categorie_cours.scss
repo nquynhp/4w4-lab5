@@ -28,9 +28,9 @@
             } //fin de menu-item
 
             .current-menu-item{
-                background-color: $color__bouton-background--current;
+                background-color: $color__bouton__background--current;
                 a{
-                    color: $color__bouton_color--current;
+                    color: $color__bouton__color--current;
                 }
             }
         }
