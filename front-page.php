@@ -28,5 +28,7 @@
         <?php the_content(); ?>
         
         <?php endif ?>
+
+        <?php the_post_thumbnail("thumbnail"); ?>
 </main>
 <?php get_footer() ?>

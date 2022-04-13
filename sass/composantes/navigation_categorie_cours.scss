@@ -9,6 +9,7 @@
         background-color: #3A3940;
         .menu-item{ // li
             margin: 5px 10px;
+            display: flex;
 
             &hover{
                 transform: translateY(10px);

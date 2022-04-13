@@ -22,9 +22,9 @@
 
         <section class="site__header__titre">
             <?= get_custom_logo(); ?>
-            <h1>
+            <!-- <h1>
                 <a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
-                    <?php bloginfo('name'); ?></h1>
+                    <?php bloginfo('name'); ?></h1> -->
             </a>
             <h2 class="header__description"><?php bloginfo('description'); ?></h2>
         </section>

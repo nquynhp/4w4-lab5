@@ -1,4 +1,4 @@
-# Exrcice #2 - 4W4 - Conception d'interface et développement Web
+# Exrcice #3 - 4W4 - Conception d'interface et développement Web
 ### Auteur : Ngoc Quynh Pham
 ### Date de remise : 25 février 2022
 
