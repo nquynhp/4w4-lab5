@@ -692,6 +692,8 @@ hr {
   text-decoration: none;
   padding: 4px;
   transition: all .5s ease-in-out;
+  background-color: #D94E73;
+  border-radius: 15px;
 }
 
 .menu-item a:hover {
@@ -871,10 +873,9 @@ hr {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  background-color: #D94E73;
+  width: 20%;
   flex: 0 0 20%;
   height: 175px;
-  border-radius: 15px;
 }
 
 .menu-accueil-container .menu .menu-item a,

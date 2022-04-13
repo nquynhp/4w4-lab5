@@ -36,6 +36,9 @@
         text-decoration: none;
         padding : 4px;
         transition: all .5s ease-in-out;
+        background-color: $color__bouton__background;
+        border-radius: 15px;
+
         &:hover {
             background-color: $color__bouton__background--hover;
             border-radius: 15px;
