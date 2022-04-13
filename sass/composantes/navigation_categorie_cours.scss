@@ -11,8 +11,8 @@
             margin: 5px 10px;
             display: flex;
 
-            &hover{
-                transform: translateY(10px);
+            &:hover{
+                transform: translateY(-5px);
             }
 
             a{

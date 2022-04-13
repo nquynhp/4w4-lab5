@@ -721,8 +721,8 @@ hr {
   display: flex;
 }
 
-.menu-categorie_cours-container .menu .menu-itemhover {
-  transform: translateY(10px);
+.menu-categorie_cours-container .menu .menu-item:hover {
+  transform: translateY(-5px);
 }
 
 .menu-categorie_cours-container .menu .menu-item a {
