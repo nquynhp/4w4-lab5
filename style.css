@@ -417,10 +417,11 @@ COMPOSANTES
   border-radius: 8px;
   box-shadow: #7a7a6e 1px -1px 10px;
   background: linear-gradient(-45deg, #ee7752, #e7b3c7, #e9799d, #f1c7da);
-  animation: gradient 1s ease infinite;
+  background-size: 100%;
+  animation: animationGradient 15s ease infinite;
 }
 
-@keyframes gradient {
+@keyframes animationGradient {
   0% {
     background-position: 0% 50%;
   }
