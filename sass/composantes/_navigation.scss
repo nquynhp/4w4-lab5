@@ -40,11 +40,11 @@
         margin: 30px;
         transition: all .5s ease-in-out;
         background-color: $color__bouton__background;
-        border-radius: 15px;
+        border-radius: 10px;
 
         &:hover {
             background-color: $color__bouton__background--hover;
-            border-radius: 15px;
+            border-radius: 10px;
             transform: translateY(-5px);
         }
     }
