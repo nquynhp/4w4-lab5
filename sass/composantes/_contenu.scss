@@ -4,7 +4,26 @@
     background-color: $color__background-main-cours;
     border-radius: 8px;
     box-shadow: #7a7a6e 1px -1px 10px;
+    
+    background: linear-gradient(-45deg, #ee7752, #e7b3c7, #e9799d, #f1c7da);
+	// background-size: 400% 400%;
+	animation: gradient 1s ease infinite;
+	// height: 100vh;
 }
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+
+}
+
 
 /*===================================================*/
 /*====== coeur ========*/
