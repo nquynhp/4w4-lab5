@@ -3,8 +3,8 @@
     <!-- <h1>----- category.php -----</h1> -->
     <?php  ?>
     <sction class="formation"></sction>
-    <a href="?cletri=title&ordre=asc"><svg width="50px" height="50px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" color="#F2134F"><path d="M0 0h24v24H0z" fill="none"></path><path d="M7 14l5-5 5 5z"></path></svg></a>
-        <a href="?cletri=title&ordre=desc"><svg width="50px" height="50px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" color="#F2134F"><path d="M0 0h24v24H0z" fill="none"></path><path d="M7 10l5 5 5-5z"></path></svg></a>
+    <a href="?cletri=title&ordre=asc"><svg width="70px" height="70px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" color="#F2134F"><path d="M0 0h24v24H0z" fill="none"></path><path d="M7 14l5-5 5 5z"></path></svg></a>
+        <a href="?cletri=title&ordre=desc"><svg width="70px" height="70px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" color="#F2134F"><path d="M0 0h24v24H0z" fill="none"></path><path d="M7 10l5 5 5-5z"></path></svg></a>
 
     <?php wp_nav_menu(array(
                 "menu"=>"categorie_cours",
