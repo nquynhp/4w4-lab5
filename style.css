@@ -719,6 +719,7 @@ hr {
 .menu-categorie_cours-container .menu .menu-item {
   margin: 5px 10px;
   display: flex;
+  border-radius: 10px;
 }
 
 .menu-categorie_cours-container .menu .menu-item:hover {
