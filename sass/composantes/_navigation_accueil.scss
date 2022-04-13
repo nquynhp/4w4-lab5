@@ -31,7 +31,8 @@
             align-items: center;
             width: 20%;
             flex : 0 0 20%;
-            height : 175px;
+            // height : 175px;
+            height : 90px;
 
             a{
                 display : flex;
@@ -40,6 +41,7 @@
                 font-size: clamp(1rem, 2vw, 1rem);
                 color: $color__bouton__color;
                 height : 100%;
+                
                 .menu-item-description { // span
                     font-size: clamp(.8rem, 1.5vw, 1rem);
 
