@@ -12,14 +12,14 @@
         .menu-item-icone{//li
             background-image: url('https://s2.svgbox.net/materialui.svg?ic=school&color=000');
         }
-        .accueil__prof .menu-item-icone{ // li
-        }
-        .accueil__aide .menu-item-icone{ //li
-        }
+        // .accueil__prof .menu-item-icone{ // li
+        // }
+        // .accueil__aide .menu-item-icone{ //li
+        // }
 
-        .accueil__etudiant .menu-item-icone{ //li
+        // .accueil__etudiant .menu-item-icone{ //li
 
-        }
+        // }
 
 
         .menu-item { // li
@@ -28,7 +28,6 @@
             justify-content: space-between;
             align-items: center;
             background-color: $color__bouton__background;
-            background-color: red;
             //width: 20%;
             flex : 0 0 20%;
             height : 175px;

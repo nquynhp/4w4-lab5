@@ -590,10 +590,6 @@ hr {
   border: none;
 }
 
-.imageEcole {
-  z-index: 1;
-}
-
 /*================================*/
 /*====== AJOUT COMMENTAIRE========*/
 /*================================*/
@@ -722,6 +718,7 @@ hr {
 
 .menu-categorie_cours-container .menu .menu-item {
   margin: 5px 10px;
+  display: flex;
 }
 
 .menu-categorie_cours-container .menu .menu-itemhover {
@@ -741,11 +738,11 @@ hr {
 }
 
 .menu-categorie_cours-container .menu .menu-item .current-menu-item {
-  background-color: #0e53a2;
+  background-color: #f5e9ad;
 }
 
 .menu-categorie_cours-container .menu .menu-item .current-menu-item a {
-  color: #abc6f1;
+  color: #facdda;
 }
 
 .site__footer {
@@ -911,7 +908,6 @@ hr {
   justify-content: space-between;
   align-items: center;
   background-color: #D94E73;
-  background-color: red;
   flex: 0 0 20%;
   height: 175px;
 }
