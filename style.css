@@ -691,12 +691,12 @@ hr {
   display: block;
   text-decoration: none;
   padding: 4px;
-  background-color: #ffffff;
   transition: all .5s ease-in-out;
 }
 
 .menu-item a:hover {
-  background-color: #D94E73;
+  background-color: #f9e08e;
+  border-radius: 15px;
   transform: translate(5px);
 }
 
@@ -855,6 +855,7 @@ hr {
 .menu-accueil-container .menu,
 .menu-evenement-container .menu {
   display: flex;
+  border-radius: 15px;
   justify-content: space-around;
   align-items: center;
 }
@@ -873,6 +874,7 @@ hr {
   background-color: #D94E73;
   flex: 0 0 20%;
   height: 175px;
+  border-radius: 15px;
 }
 
 .menu-accueil-container .menu .menu-item a,

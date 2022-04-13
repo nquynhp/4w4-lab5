@@ -35,11 +35,10 @@
         display : block;
         text-decoration: none;
         padding : 4px;
-        background-color: $color__background-link;
         transition: all .5s ease-in-out;
         &:hover {
-            background-color: $color__background-link-hover;
-            // background-color: $color__bouton__color;
+            background-color: $color__bouton__background--hover;
+            border-radius: 15px;
             transform: translate(5px);
         }
     }

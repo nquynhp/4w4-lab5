@@ -1,16 +1,16 @@
 .menu-accueil-container,
 .menu-evenement-container { // nav
-    
-
 
     .menu { // ul
 
         display : flex;
+        border-radius: 15px;
         justify-content: space-around;
         align-items: center;
 
         .menu-item-icone{//li
             background-image: url('https://s2.svgbox.net/materialui.svg?ic=school&color=000');
+            
         }
         // .accueil__prof .menu-item-icone{ // li
         // }
@@ -31,6 +31,8 @@
             //width: 20%;
             flex : 0 0 20%;
             height : 175px;
+
+            border-radius: 15px;
 
             a{
                 display : flex;
