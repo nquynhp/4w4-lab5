@@ -877,6 +877,7 @@ hr {
   border-radius: 15px;
   justify-content: space-around;
   align-items: center;
+  margin-top: 20px;
 }
 
 .menu-accueil-container .menu .menu-item-icone,
