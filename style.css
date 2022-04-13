@@ -685,12 +685,14 @@ hr {
 .menu-item {
   margin: 0;
   padding: 0;
+  display: flex;
 }
 
 .menu-item a {
   display: block;
   text-decoration: none;
   padding: 4px;
+  margin: 30px;
   transition: all .5s ease-in-out;
   background-color: #D94E73;
   border-radius: 15px;
@@ -699,7 +701,7 @@ hr {
 .menu-item a:hover {
   background-color: #f9e08e;
   border-radius: 15px;
-  transform: translate(5px);
+  transform: translateY(-5px);
 }
 
 .menu-item li {
@@ -883,7 +885,7 @@ hr {
   display: flex;
   flex-direction: column;
   align-items: center;
-  font-size: clamp(1rem, 2vw, 2.2rem);
+  font-size: clamp(1rem, 2vw, 1rem);
   color: #F299B1;
   height: 100%;
 }
