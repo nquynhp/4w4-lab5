@@ -708,44 +708,6 @@ hr {
   padding-left: 20px;
 }
 
-/**************************************************************/
-/************** Navigation catégorie cours ********************/
-/*************************************************************/
-.menu-categorie_cours-container .menu {
-  display: flex;
-  background-color: #3A3940;
-}
-
-.menu-categorie_cours-container .menu .menu-item {
-  margin: 5px 10px;
-  display: flex;
-  border-radius: 10px;
-}
-
-.menu-categorie_cours-container .menu .menu-item:hover {
-  transform: translateY(-5px);
-}
-
-.menu-categorie_cours-container .menu .menu-item a {
-  color: #F299B1;
-}
-
-.menu-categorie_cours-container .menu .menu-item:hover a {
-  background-color: #f9e08e;
-}
-
-.menu-categorie_cours-container .menu .menu-item:hover a a {
-  color: #851533;
-}
-
-.menu-categorie_cours-container .menu .menu-item .current-menu-item {
-  background-color: #f5e9ad;
-}
-
-.menu-categorie_cours-container .menu .menu-item .current-menu-item a {
-  color: #facdda;
-}
-
 .site__footer {
   display: flex;
   flex-direction: column;
