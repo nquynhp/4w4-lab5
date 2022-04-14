@@ -121,19 +121,14 @@ function my_register_sidebars() {
 
 /**
      * $query contient la requête mysql qui permet d'extraire le contenu de la nouvelle page que l'on tente d'accéder
-     * @param : WP_Query $query
+     * @param : WP_Query $query : Objet contenant 
      * @return l'objet WP_query $query
      */
     function cidw_4w4_pre_get_posts(WP_Query $query)
     {
-
-        //  $ordre = get_query_var('ordre');
-        //  $cle = get_query_var('cletri');
-        //  echo "-----".$ordre. "-----" .$cle;
-
         if (is_admin() 
-        || !is_main_query()
-        || !is_category(array('cours', 'web', 'jeu', 'design', 'utilitaire', 'video', 'creation-3d')))
+        || !$query->is_main_query()
+        || !$query->is_category(array('cours', 'web', 'jeu', 'design', 'utilitaire', 'video', 'creation-3d')))
         {
             return $query;
         }
