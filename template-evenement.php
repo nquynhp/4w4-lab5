@@ -10,11 +10,20 @@
 
 <?php get_header() ?>
 <main class="site__main">
+   <article class="evenement">
 
-<!-- <h1> --------- Template Evenement --------- </h1> -->
+   <!-- <h1> --------- Template Evenement --------- </h1> -->
    <?php if (have_posts()): the_post(); ?>
-        <?php the_title() ?>
-        <?php the_field('product_description'); ?>       
+        <h1> <?php the_title() ?> </h1>
+        <section class="evenement__resume">
+            <?php the_field('resume'); ?>   
+        </section>
+        <p class="evenement__endroit">
+        <?php the_field('endroit'); ?>   
+        </p>
+
+   </article>
+
    <?php endif ?>
 
    <?php the_post_thumbnail("thumbnail"); ?>

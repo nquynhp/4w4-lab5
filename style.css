@@ -407,6 +407,49 @@ a:hover, a:active {
   outline: 0;
 }
 
+h1 {
+  font-size: clamp(2rem, 8vw, 5rem);
+}
+
+h2 {
+  font-size: 3rem;
+}
+
+h3 {
+  font-size: 2rem;
+}
+
+h4 {
+  font-size: 1.8rem;
+}
+
+h5 {
+  font-size: 1.6rem;
+}
+
+h6 {
+  font-size: 1.3rem;
+}
+
+p {
+  font-size: 1rem;
+  font-family: "Karla", sans-serif;
+}
+
+/************** La police*****/
+h1, h2 {
+  font-family: "Karla", sans-serif;
+}
+
+h3, h4, h5, h6 {
+  font-family: "Karla", sans-serif;
+}
+
+a {
+  font-size: clamp(0.9rem, 1vw, 1.2rem);
+  font-family: "Karla", sans-serif;
+}
+
 /* ---------------------------------------------------------
 COMPOSANTES
 --------------------------------------------------------- */
@@ -727,6 +770,44 @@ hr {
   padding-left: 20px;
 }
 
+/**************************************************************/
+/************** Navigation catégorie cours ********************/
+/*************************************************************/
+.menu-categorie_cours-container .menu {
+  display: flex;
+  background-color: #3A3940;
+}
+
+.menu-categorie_cours-container .menu .menu-item {
+  margin: 5px 10px;
+  display: flex;
+  border-radius: 10px;
+}
+
+.menu-categorie_cours-container .menu .menu-item:hover {
+  transform: translateY(-5px);
+}
+
+.menu-categorie_cours-container .menu .menu-item a {
+  color: #F299B1;
+}
+
+.menu-categorie_cours-container .menu .menu-item:hover a {
+  background-color: #f9e08e;
+}
+
+.menu-categorie_cours-container .menu .menu-item:hover a a {
+  color: #851533;
+}
+
+.menu-categorie_cours-container .menu .menu-item .current-menu-item {
+  background-color: #f5e9ad;
+}
+
+.menu-categorie_cours-container .menu .menu-item .current-menu-item a {
+  color: #facdda;
+}
+
 .site__footer {
   display: flex;
   flex-direction: column;
@@ -921,6 +1002,10 @@ hr {
   margin-top: auto;
 }
 
+.evenement__resume {
+  background-color: #840016;
+}
+
 /* ---------------------------------------------------------
 ANIMATION
 --------------------------------------------------------- */
@@ -1037,6 +1122,7 @@ theme name: TP1 - Ngoc Quynh Pham
 .site__header {
   grid-area: header;
   background-color: #F2134F;
+  width: 110vw;
 }
 
 .site__barre {
@@ -1047,6 +1133,13 @@ theme name: TP1 - Ngoc Quynh Pham
 .site__main {
   grid-area: main;
   background-color: rbga(#fa90acb6, 0.5);
+  width: 100vw;
+}
+
+@media screen and (min-width: 800px) {
+  .site__main {
+    width: 75vw;
+  }
 }
 
 .site__footer {
