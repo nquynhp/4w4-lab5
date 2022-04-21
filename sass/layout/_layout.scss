@@ -39,7 +39,7 @@ theme name: TP1 - Ngoc Quynh Pham
 .site__main{
     grid-area: main;
     background-color: rbga($color__background-main, .5);
-    width: 100vw;
+    width: 100%;
     @media screen and (min-width: $largeur__media--tablette) {
         width: 75vw;
     }

@@ -1027,12 +1027,18 @@ hr {
 
 .boite__modale {
   position: absolute;
-  top: 0;
-  left: 0;
-  border: 5px solid yellow;
-  background-color: red;
-  width: 50%;
-  height: 50%;
+  top: 25vh;
+  left: 25vw;
+  border: 5px solid #F2134F;
+  background-color: #f6cad6;
+  width: 50vw;
+  height: 50vh;
+  transform: scale(0.1);
+  transition: all .75s ease-in-out;
+}
+
+.boite__modale:hover {
+  transform: scale(1);
 }
 
 /* ---------------------------------------------------------
@@ -1143,7 +1149,7 @@ theme name: TP1 - Ngoc Quynh Pham
 .site__main {
   grid-area: main;
   background-color: rbga(#fa90acb6, 0.5);
-  width: 100vw;
+  width: 100%;
 }
 
 @media screen and (min-width: 800px) {
