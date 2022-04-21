@@ -1,10 +1,11 @@
 .menu-accueil-container,
 .menu-evenement-container { // nav
-
+width: 80%;
 
     .menu { // ul
 
         display : flex;
+        flex-wrap: wrap;
         border-radius: 15px;
         justify-content: space-around;
         align-items: center;
@@ -31,7 +32,6 @@
             align-items: center;
             width: 20%;
             flex : 0 0 20%;
-            // height : 175px;
             height : 90px;
 
             a{
