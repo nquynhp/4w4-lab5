@@ -56,6 +56,14 @@
     </div>
 </footer>
 
-</body>
+<div class="boite__modale">
+    <button class="boite__modale__fermeture">X</button>
+    <p class="boite__modale_texte">
+        Ceci est un premier test de boîte modale
+    </p>
+</div>
+
 <?php wp_footer(); ?>
+</body>
+
 </html>

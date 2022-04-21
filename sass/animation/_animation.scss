@@ -38,28 +38,28 @@
 /*===========================================*/
 /*====== ANIMATION DU MENU PRINCIPAL ========*/
 /*===========================================*/
-.menu{
-    padding-left: 15%;
-    animation: anim_menu_principal .85s ease-in-out;
-}
+// .menu{
+//     padding-left: 15%;
+//     animation: anim_menu_principal .85s ease-in-out;
+// }
 
-@keyframes anim_menu_principal{
-    0%{
-        padding-left: 25%;
-    }
+// @keyframes anim_menu_principal{
+//     0%{
+//         padding-left: 25%;
+//     }
 
-    50%{
-        padding-left: 30%;
-    }
+//     50%{
+//         padding-left: 30%;
+//     }
 
-    80%{
-        padding-left: 0%;
-    }
+//     80%{
+//         padding-left: 0%;
+//     }
 
-    100%{
-        padding-left: 15%;
-    }
-}
+//     100%{
+//         padding-left: 15%;
+//     }
+// }
 
 
 
