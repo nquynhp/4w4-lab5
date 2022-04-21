@@ -1025,6 +1025,16 @@ hr {
   background-color: #840016;
 }
 
+.boite__modale {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border: 5px solid yellow;
+  background-color: red;
+  width: 50%;
+  height: 50%;
+}
+
 /* ---------------------------------------------------------
 ANIMATION
 --------------------------------------------------------- */
@@ -1100,6 +1110,7 @@ LAYOUT
 theme name: TP1 - Ngoc Quynh Pham
 */
 .site {
+  position: relative;
   background-color: #ffffff;
   font-family: monaco, Consolas, "Lucida Console";
 }
