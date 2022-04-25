@@ -578,6 +578,10 @@ COMPOSANTES
   transition: transform .5s;
 }
 
+.formation__cours__invisible {
+  display: none;
+}
+
 @media screen and (min-width: 800px) {
   .formation__cours {
     width: 45%;
@@ -1035,12 +1039,23 @@ hr {
   position: fixed;
   top: 25%;
   left: 25%;
-  border: 5px solid #F2134F;
-  background-color: #f6cad6;
+  background-color: #1b1b1b;
+  color: white;
   width: 50%;
   height: 50%;
   transform: scale(0);
-  transition: all .75s ease-in-out;
+  transition: all .50s ease-in-out;
+}
+
+.boite__modale__fermeture {
+  border-radius: 50%;
+  border-color: white;
+  margin-left: 10px;
+  margin-top: 10px;
+}
+
+.boite__modale__fermeture__hover {
+  background-color: gray;
 }
 
 .ouvrir {
