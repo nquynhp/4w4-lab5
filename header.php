@@ -15,16 +15,16 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;1,800;1,900&display=swap"
         rel="stylesheet">
     <?php wp_head() ?>
-    <?php show_admin_bar(true); ?>
+    <?php show_admin_bar(true); ?> 
 </head>
-<body <?php body_class("site"); ?>>
+<body <?php body_class("site"); ?> style="background-color:<?php get_theme_mod($background_body); ?>;" >
     <header class="site__header">
 
         <section class="site__header__titre">
-            <?= get_custom_logo(); ?>
-            <!-- <h1>
+            <?=get_custom_logo(); ?>
+            <h1 class="header__titre">
                 <a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
-                    <?php bloginfo('name'); ?></h1> -->
+                    <?php bloginfo('name'); ?></h1>
             </a>
             <h2 class="header__description"><?php bloginfo('description'); ?></h2>
         </section>
