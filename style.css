@@ -805,6 +805,7 @@ hr {
   margin: 5px 10px;
   display: flex;
   border-radius: 10px;
+  transition: transform 1s ease-in-out;
 }
 
 .menu-categorie_cours-container .menu .menu-item:hover {
