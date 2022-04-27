@@ -656,6 +656,7 @@ hr {
 .cours__desc__ouvrir {
   display: flex;
   margin-top: 1.5vw;
+  border-radius: 10%;
 }
 
 /*================================*/
