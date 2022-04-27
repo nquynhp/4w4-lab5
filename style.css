@@ -851,7 +851,7 @@ hr {
   /** Taille d'écran pour les écrans mobiles */
 }
 
-@media screen and (min-width: 200px) {
+@media screen and (max-width: 200px) {
   .site__footer__colonne {
     flex-direction: column;
     align-items: center;
@@ -878,7 +878,7 @@ hr {
   /** Taille d'écran pour les écrans mobiles */
 }
 
-@media screen and (min-width: 200px) {
+@media screen and (max-width: 200px) {
   .footer__adresse {
     flex-direction: column;
     align-items: center;
@@ -1091,6 +1091,14 @@ hr {
   height: 50%;
   transform: scale(0);
   transition: all .50s ease-in-out;
+  /** Texte dans la boîte modale**/
+}
+
+.boite__modale__texte {
+  padding-top: 5vh;
+  padding-bottom: 5vh;
+  padding-left: 5vh;
+  padding-right: 5vh;
 }
 
 .boite__modale__fermeture {

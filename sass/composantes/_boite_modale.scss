@@ -11,7 +11,14 @@
     transform: scale(0);
     transition: all .50s ease-in-out;
         // &__fermeture{}
-    // &__texte{}
+    
+    /** Texte dans la boîte modale**/    
+    &__texte{
+        padding-top: 5vh;
+        padding-bottom: 5vh;
+        padding-left: 5vh;
+        padding-right: 5vh;
+    }
 
     &__fermeture{
         border-radius: 50%;
