@@ -34,14 +34,26 @@
 
 .footer__adresse{
 
-      /** Taille d'écran pour les écrans mobiles */
-      @media screen and (min-width: 200px){
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        margin-top: 5vh;
-        margin-bottom: 5vh;
-      }
+  /** Taille d'écran pour les écrans mobiles */
+  @media screen and (min-width: 200px){
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+  }
+}
+
+.footer__liens{
+
+  /** Taille d'écran pour les écrans mobiles */
+  @media screen and (min-width: 200px){
+    .menu-item{
+      display: flex;
+      justify-content: center;
+      margin-right: 6vw;
+    }
+  }
 }
 
 .site__footer {

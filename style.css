@@ -888,6 +888,18 @@ hr {
   }
 }
 
+.footer__liens {
+  /** Taille d'écran pour les écrans mobiles */
+}
+
+@media screen and (min-width: 200px) {
+  .footer__liens .menu-item {
+    display: flex;
+    justify-content: center;
+    margin-right: 6vw;
+  }
+}
+
 .site__footer {
   font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
   background-color: #F2134F;
