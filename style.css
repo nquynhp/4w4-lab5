@@ -667,6 +667,7 @@ hr {
   color: #ffcad8;
   display: flex;
   flex-direction: column;
+  /** Taille d'écran pour les écrans mobiles */
   /*================================*/
   /*====== AJOUT COMMENTAIRE========*/
   /*================================*/
@@ -842,11 +843,20 @@ hr {
 .site__footer {
   display: flex;
   flex-direction: column;
+  /** Taille d'écran pour les écrans mobiles */
 }
 
 .site__footer__colonne {
   display: flex;
   justify-content: space-between;
+}
+
+@media screen and (min-width: 200px) {
+  .site__footer__colonne {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
 }
 
 .site__footer__colonne section {

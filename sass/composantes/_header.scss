@@ -7,6 +7,7 @@
     display: flex;
     flex-direction: column;
 
+    /** Taille d'écran pour les écrans mobiles */
     @media screen and (min-width: 200px){
       flex-direction: row;
       align-items: center;

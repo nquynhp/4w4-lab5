@@ -5,6 +5,13 @@
   &__colonne{
     display : flex;
     justify-content: space-between;
+
+    @media screen and (min-width: 200px){
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
     section {
       display : flex;
       flex-direction: column;
@@ -19,6 +26,13 @@
     flex-direction: column;
     align-items: center;
   }
+
+  /** Taille d'écran pour les écrans mobiles */
+  // @media screen and (min-width: 200px){
+  //   flex-direction: column;
+  //   align-items: center;
+  //   justify-content: center;
+  // }
 
 }
 
