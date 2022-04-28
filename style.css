@@ -724,17 +724,24 @@ hr {
 }
 
 #burger {
-  position: absolute;
-  transition: transform .3s;
-  transform: rotate(0);
+  z-index: 99;
 }
 
 #chk-burger {
   display: none;
 }
 
-#chk-burger:checked ~ #burger {
-  transform: rotate(90deg);
+#chk-burger:checked ~ .menu-principal-container {
+  display: block;
+}
+
+.menu {
+  background-color: #f6cad6;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  padding-left: 15%;
+  animation: anim_menu_principal .85s ease-in-out;
 }
 
 .menu-principal-container {
@@ -766,8 +773,29 @@ hr {
   /***** FIN DE L'ANIMATION DU MENU PRINCIPAL ****/
 }
 
-#chk-burger:checked ~ .menu-principal-container {
-  display: block;
+.menu {
+  background-color: #f6cad6;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  padding-left: 15%;
+  animation: anim_menu_principal .85s ease-in-out;
+}
+
+@keyframes anim_menu_principal {
+  0% {
+    padding-left: 25%;
+  }
+  50% {
+    padding-left: 30%;
+  }
+  80% {
+    padding-left: 0%;
+  }
+  100% {
+    padding-left: 15%;
+  }
+  /***** FIN DE L'ANIMATION DU MENU PRINCIPAL ****/
 }
 
 .menu-item {
@@ -798,6 +826,21 @@ hr {
 
 .menu-item li:hover {
   padding-left: 20px;
+}
+
+@media screen and (min-width: 1100px) {
+  #burger {
+    display: none;
+  }
+  .menu-principal-container {
+    display: block;
+  }
+  .home #burger {
+    display: block;
+  }
+  .home .menu-principal-container {
+    display: none;
+  }
 }
 
 /**************************************************************/
@@ -1186,6 +1229,50 @@ ANIMATION
   }
 }
 
+.burger {
+  margin: 1.5rem 1.5rem;
+  position: relative;
+  width: 2.5rem;
+  height: 2.5rem;
+  background-color: #F299B1;
+  border-radius: 10%;
+  overflow: hidden;
+}
+
+.burger .burger__ligne {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  transition: all 0.5s ease-in-out;
+  background-color: #bd83d8;
+}
+
+.burger .burger__ligne:nth-of-type(1) {
+  clip-path: polygon(0 0, 100% 0, 100% 20%, 0 20%);
+}
+
+.burger .burger__ligne:nth-of-type(2) {
+  clip-path: polygon(0 40%, 100% 40%, 100% 60%, 0 60%);
+}
+
+.burger .burger__ligne:nth-of-type(3) {
+  clip-path: polygon(0 80%, 100% 80%, 100% 100%, 0 100%);
+}
+
+#chk-burger:checked ~ .burger .burger__ligne:nth-of-type(1) {
+  clip-path: polygon(7.1% -7.1%, 107.1% 92.9%, 92.9% 107.1%, -7.1% 7.1%);
+}
+
+#chk-burger:checked ~ .burger .burger__ligne:nth-of-type(2) {
+  clip-path: polygon(40% 40%, 60% 40%, 60% 60%, 40% 60%);
+}
+
+#chk-burger:checked ~ .burger .burger__ligne:nth-of-type(3) {
+  clip-path: polygon(-7.1% 92.9%, 92.9% -7.1%, 107.1% 7.1%, 7.1% 107.1%);
+}
+
 /* ---------------------------------------------------------
 LAYOUT
 --------------------------------------------------------- */
@@ -1207,7 +1294,6 @@ theme name: TP1 - Ngoc Quynh Pham
   bottom: 0;
   left: 0;
   right: 0;
-  background-color: #D94E73;
   clip-path: circle(43.1% at 85% 73%);
   z-index: -1;
 }

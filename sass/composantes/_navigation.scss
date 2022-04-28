@@ -1,7 +1,8 @@
 #burger {
-    position : absolute;
-    transition : transform .3s;
-    transform : rotate(0);
+    // position : absolute;
+    z-index: 99;
+    // left: 10px;
+    // top: 30px;
 }
 
 
@@ -10,9 +11,29 @@
 }
 
 
-#chk-burger:checked ~ #burger {
-    transform : rotate(90deg);
+// #chk-burger:checked ~ #burger {
+
+// }
+
+#chk-burger:checked ~ .menu-principal-container {
+    display: block;
 }
+
+.menu{
+    background-color: #f6cad6;
+    list-style-type: none;
+    margin : 0;
+    padding :0;
+    
+    
+        padding-left: 15%;
+        animation: anim_menu_principal .85s ease-in-out;
+}
+
+// .menu-principal-container {
+//     display: none;
+// }
+
 .menu-principal-container {
     display : none;
     .menu{
@@ -44,39 +65,36 @@
         } /***** FIN DE L'ANIMATION DU MENU PRINCIPAL ****/
     }
 }
-#chk-burger:checked ~ .menu-principal-container{
-    display : block;
+
+
+.menu{
+    background-color: #f6cad6;
+    list-style-type: none;
+    margin : 0;
+    padding :0;
+    
+    
+        padding-left: 15%;
+        animation: anim_menu_principal .85s ease-in-out;
 }
 
+@keyframes anim_menu_principal{
+    0%{
+        padding-left: 25%;
+    }
 
-// .menu{
-//     background-color: #f6cad6;
-//     list-style-type: none;
-//     margin : 0;
-//     padding :0;
-    
-    
-//         padding-left: 15%;
-//         animation: anim_menu_principal .85s ease-in-out;
-// }
+    50%{
+        padding-left: 30%;
+    }
 
-// @keyframes anim_menu_principal{
-//     0%{
-//         padding-left: 25%;
-//     }
+    80%{
+        padding-left: 0%;
+    }
 
-//     50%{
-//         padding-left: 30%;
-//     }
-
-//     80%{
-//         padding-left: 0%;
-//     }
-
-//     100%{
-//         padding-left: 15%;
-//     } /***** FIN DE L'ANIMATION DU MENU PRINCIPAL ****/
-// }
+    100%{
+        padding-left: 15%;
+    } /***** FIN DE L'ANIMATION DU MENU PRINCIPAL ****/
+}
 
 
 
@@ -108,5 +126,20 @@
         }
     }
 
+}
+
+@media screen and (min-width : $largeur__media--desktop){
+    #burger {
+        display : none;
+    }
+    .menu-principal-container {
+        display : block;
+    }
+    .home #burger {
+        display : block;
+    }
+    .home .menu-principal-container {
+        display : none;
+    }
 }
 

@@ -16,6 +16,15 @@
         rel="stylesheet">
     <?php wp_head() ?>
     <?php show_admin_bar(true); ?> 
+    <style>
+        /* .home::after{
+            background-color: <?= get_theme_mod("background_clippath"); ?>;
+        }
+
+        .site__main{
+            background-color:;
+        } */
+    </style>
 </head>
 <body <?php body_class("site"); ?> style="background-color:<?= get_theme_mod("background_body"); ?>;" >
     <header class="site__header">
@@ -48,13 +57,10 @@
     </header>
     <section class="site__barre">
         <input type="checkbox" id="chk-burger">
-        <label for="chk-burger" id="burger">
-        <svg class="svg_menu_principal" width="24" height="24" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" color="#000"><path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm0 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm0 5a1 1 0 011-1h6a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"></path></svg>
-                <path d="M0 0h24v24H0z" fill="none"></path>
-                <path
-                    d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0016 9.5 6.5 6.5 0 109.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z">
-                </path>
-            </svg>
+        <label for="chk-burger" id="burger" class="burger">
+            <div class="burger__ligne"></div>
+            <div class="burger__ligne"></div>
+            <div class="burger__ligne"></div>
         </label>
         <?php
         $iconeCours = '<svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" color="#000"><path fill-rule="evenodd" d="M17.263 2.177a1.75 1.75 0 012.474 0l2.586 2.586a1.75 1.75 0 010 2.474L19.53 10.03l-.012.013L8.69 20.378a1.75 1.75 0 01-.699.409l-5.523 1.68a.75.75 0 01-.935-.935l1.673-5.5a1.75 1.75 0 01.466-.756L14.476 4.963l2.787-2.786zm-2.275 4.371l-10.28 9.813a.25.25 0 00-.067.108l-1.264 4.154 4.177-1.271a.25.25 0 00.1-.059l10.273-9.806-2.94-2.939zM19 8.44l2.263-2.262a.25.25 0 000-.354l-2.586-2.586a.25.25 0 00-.354 0L16.061 5.5 19 8.44z"></path></svg>';

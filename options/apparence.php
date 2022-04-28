@@ -33,6 +33,10 @@
     $manager->add_control(new WP_Customize_Color_Control($manager, 'background_body',
                             ["section"=>"apparence_body",
                             "label"=>"Choisir la couleur d'arrière plan"]));
+
+    $manager->add_control(new WP_Customize_Color_Control($manager, 'background_clippath',
+                            ["section"=>"apparence_body",
+                            "label"=>"Obtenir la couleur du clip path"]));
  });
 
 
