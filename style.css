@@ -1234,7 +1234,7 @@ ANIMATION
   position: relative;
   width: 2.5rem;
   height: 2.5rem;
-  background-color: #F299B1;
+  background-color: transparent;
   border-radius: 10%;
   overflow: hidden;
 }
