@@ -17,6 +17,12 @@
                                 "sanitize_callback"=> "sanitize_hex_color"
                             ]);
 
+    $manager->add_setting('background_clippath', 
+                            [
+                                "default"=>"#ffffff",
+                                "sanitize_callback"=> "sanitize_hex_color"
+                            ]);
+
     // $manager->add_control('background_body',
     //                         [
     //                             "section"=>"apparence_body",
