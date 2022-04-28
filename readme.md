@@ -1,6 +1,6 @@
-# Exrcice #3 - 4W4 - Conception d'interface et développement Web
+# Exrcice #4 - 4W4 - Conception d'interface et développement Web
 ### Auteur : Ngoc Quynh Pham
-### Date de remise : 12 avril 2022
+### Date de remise : 26 avril 2022
 
 ```
 Cet exercice nous a permis d'introduire la structure d'un thème Wordpress. Voici la structure utilisée:
@@ -9,4 +9,4 @@ Cet exercice nous a permis d'introduire la structure d'un thème Wordpress. Voic
 -Les modèle principal est : «index.php»
 
 Pour modifier readme.md
-https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax# 4w4-ex3
+https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax# 4w4-ex4

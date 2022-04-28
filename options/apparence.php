@@ -17,16 +17,20 @@
                                 "sanitize_callback"=> "sanitize_hex_color"
                             ]);
 
-    $manager->add_control('background_body',
-                            [
-                                "section"=>"apparence_body",
-                                "setting"=>"background_body",
-                                "label"=>"La couleur de background body"
-                            ]);
- })
-?>
+    // $manager->add_control('background_body',
+    //                         [
+    //                             "section"=>"apparence_body",
+    //                             "setting"=>"background_body",
+    //                             "label"=>"La couleur de background body"
+    //                         ]);
 
-<!-- //   La méthode add_section( id de la section,
+    $manager->add_control(new WP_Customize_Color_Control($manager, 'background_body',
+                            ["section"=>"apparence_body",
+                            "label"=>"Choisir la couleur d'arrière plan"]));
+ });
+
+
+//   La méthode add_section( id de la section,
 //                            [
 //                                "title" => "Le titre de la section"
 //                            ]);
@@ -43,3 +47,4 @@
 //   La méthode add_control (new WP_Customize_Color_Control($manager, le nom de la variable php,
 //                         ["section"=>"le ID de la section",
 //                         "label"=>l'étiquette de la variable dans le formulaire  ])) -->
+?>
