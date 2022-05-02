@@ -24,10 +24,10 @@
     
         <?php if (have_posts()): the_post() ?>
 
-        <?php the_title();  ?>
-        <div class="galerie">
-        <?php the_content(); ?>
-        </div>
+                <h1><?php the_title();  ?></h1>
+                <div class="galerie">
+                        <?php the_content(); ?>
+                </div>
         
         <?php endif ?>
 

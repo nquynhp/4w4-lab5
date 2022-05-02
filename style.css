@@ -1162,7 +1162,10 @@ hr {
 }
 
 .galerie {
+  display: flex;
+  justify-content: center;
   width: 95%;
+  border: white 5px;
 }
 
 @media screen and (min-width: 500px) {
@@ -1175,10 +1178,6 @@ hr {
   display: flex;
   margin-left: 5rem;
   margin-top: 3rem;
-}
-
-.wp-duotone {
-  box-shadow: 8px 10px #d84368;
 }
 
 /* ---------------------------------------------------------
