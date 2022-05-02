@@ -15,15 +15,22 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;1,800;1,900&display=swap"
         rel="stylesheet">
     <?php wp_head() ?>
-    <?php show_admin_bar(true); ?> 
+    <?php show_admin_bar(true); ?>
+    <!-- Style du customizer --> 
     <style>
-        /* .home::after{
+        /** Change le bakcground-color du clip-path dans .home::after qui est un pseudo élément du body pour la page d'accueil **/
+         .home::after{
             background-color: <?= get_theme_mod("background_clippath"); ?>;
         }
 
-        .site__main{
+        /** Change le bakcground-color du body **/
+        .site{
+            background-color: <?= get_theme_mod("background_body"); ?>;
+        }
+
+        /* .site__main{
             background-color:;
-        } */
+        }  */
     </style>
 </head>
 <body <?php body_class("site"); ?> style="background-color:<?= get_theme_mod("background_body"); ?>;" >
