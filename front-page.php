@@ -1,5 +1,5 @@
 <?php get_header() ?>
-<main class="principal">
+<main class="site__main">
 <h1>Les études en TIM</h1>
         <?php
         /******************************************* menu accueil */

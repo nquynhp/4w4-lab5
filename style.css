@@ -453,7 +453,7 @@ a {
 /* ---------------------------------------------------------
 COMPOSANTES
 --------------------------------------------------------- */
-.principal {
+.site__main {
   margin: 20px;
   padding: 10px 15px;
   background-color: #F2F2F2;
@@ -686,7 +686,7 @@ hr {
 }
 
 .site__header__titre h1 {
-  font-size: clamp(1rem, 4vw, 7rem);
+  font-size: clamp(0.75rem, 3vw, 5rem);
   font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
   padding-left: 10px;
 }
@@ -1165,7 +1165,6 @@ hr {
   display: flex;
   justify-content: center;
   width: 95%;
-  border: white 5px;
 }
 
 @media screen and (min-width: 500px) {
@@ -1174,10 +1173,29 @@ hr {
   }
 }
 
-.wp-block-gallery {
-  display: flex;
-  margin-left: 5rem;
-  margin-top: 3rem;
+.home .site__main {
+  justify-content: center;
+}
+
+html {
+  /*La barre derriere*/
+  /*La barre*/
+}
+
+html ::-webkit-scrollbar {
+  width: 15px;
+}
+
+html ::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+html ::-webkit-scrollbar-thumb {
+  background-color: #0f0f0f;
+}
+
+html ::-webkit-scrollbar-thumb:hover {
+  background-color: #fe0077;
 }
 
 /* ---------------------------------------------------------
@@ -1320,7 +1338,12 @@ theme name: TP1 - Ngoc Quynh Pham
 .site__header {
   grid-area: header;
   background-color: #F2527D;
-  width: 110vw;
+}
+
+@media screen and (min-width: 1100px) {
+  .site__header {
+    width: 100vw;
+  }
 }
 
 .site__barre {
@@ -1331,7 +1354,9 @@ theme name: TP1 - Ngoc Quynh Pham
 .site__main {
   grid-area: main;
   background-color: rbga(#fa90acb6, 0.5);
-  width: 90%;
+  width: 90vw;
+  display: flex;
+  flex-direction: column;
 }
 
 @media screen and (min-width: 800px) {
@@ -1343,6 +1368,12 @@ theme name: TP1 - Ngoc Quynh Pham
 .site__footer {
   grid-area: footer;
   background-color: #F2527D;
+}
+
+@media screen and (min-width: 1100px) {
+  .site__footer {
+    width: 100vw;
+  }
 }
 
 .site {

@@ -1,3 +1,25 @@
 .home .site__main {
     justify-content: center;
 }
+
+html{
+    ::-webkit-scrollbar{
+        width: 15px;
+    }
+
+    /*La barre derriere*/
+    ::-webkit-scrollbar-track{
+        background: transparent;
+    }
+
+    /*La barre*/
+    ::-webkit-scrollbar-thumb{
+        background-color: rgb(15, 15, 15);
+    }
+
+    ::-webkit-scrollbar-thumb:hover{
+        background-color: rgb(254, 0, 119);
+    }
+
+
+}
