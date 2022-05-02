@@ -1161,6 +1161,16 @@ hr {
   transform: scale(1);
 }
 
+.galerie {
+  width: 95%;
+}
+
+@media screen and (min-width: 500px) {
+  .galerie {
+    width: 75%;
+  }
+}
+
 .wp-block-gallery {
   display: flex;
   margin-left: 5rem;
