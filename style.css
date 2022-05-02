@@ -438,7 +438,7 @@ p {
 
 /************** La police*****/
 h1, h2 {
-  font-family: "Karla", sans-serif;
+  font-family: fantasy;
 }
 
 h3, h4, h5, h6 {
@@ -453,6 +453,12 @@ a {
 /* ---------------------------------------------------------
 COMPOSANTES
 --------------------------------------------------------- */
+body {
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+}
+
 .site__main {
   margin: 20px;
   padding: 10px 15px;
@@ -683,6 +689,7 @@ hr {
 .site__header__titre {
   display: flex;
   align-items: center;
+  height: 90px;
 }
 
 .site__header__titre h1 {
@@ -1173,6 +1180,11 @@ hr {
   }
 }
 
+.wp-block-gallery {
+  display: flex;
+  margin-left: 5rem;
+}
+
 .home .site__main {
   justify-content: center;
 }
@@ -1320,6 +1332,12 @@ theme name: TP1 - Ngoc Quynh Pham
   position: relative;
   background-color: #ffffff;
   font-family: monaco, Consolas, "Lucida Console";
+}
+
+@media screen and (min-width: 1100px) {
+  .site {
+    width: 100vw;
+  }
 }
 
 .home::after {

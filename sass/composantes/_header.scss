@@ -16,6 +16,7 @@
     &__titre{
       display: flex;
       align-items: center;
+      height: 90px;
 
       h1{ //titre principal du site
         font-size: clamp(0.75rem, 3vw, 5rem);

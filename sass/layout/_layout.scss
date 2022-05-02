@@ -6,6 +6,9 @@ theme name: TP1 - Ngoc Quynh Pham
     position: relative;
     background-color: $color__background-body;
     font-family: $font__main;
+    @media screen and (min-width: $largeur__media--desktop) {
+        width: 100vw;
+    }
 }
 
 // permet de formater le .site
