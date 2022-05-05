@@ -12,6 +12,11 @@ function cidw_4w4_enqueue(){
 
     wp_enqueue_style('cidw-4w4-google-font', "https://fonts.googleapis.com/css2?family=Karla:wght@300&display=swap", false);
 
+    wp_register_script('cidw-4w4-curseur',
+                        get_template_directory_uri() . '/javascript/curseur.js',
+                        array(), filemtime(get_template_directory() . '/javascript/curseur.js'),
+                        true); // true pour intégrer le .js en bas du document
+
     wp_register_script('cidw-4w4-boite-modale',
                         get_template_directory_uri() . '/javascript/boite-modale.js',
                         array(), filemtime(get_template_directory() . '/javascript/boite-modale.js'),
