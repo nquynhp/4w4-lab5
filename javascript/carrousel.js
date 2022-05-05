@@ -68,16 +68,19 @@
     boite__carrousel.append(elmImg);
 
     for (const img of galerie__img) {
+        let bouton = document.createElement('button');
+        boite__carrousel__navigation.append(bouton)
         console.log(img.tagName);
         img.addEventListener('mousedown', function () {
             console.log(this.getAttribute('src'));
             boite__carrousel.classList.add('ouvrir');
-            console.log(boite__carrousel.classList);
+            // console.log(boite__carrousel.classList);
             elmImg.setAttribute('src', this.getAttribute('src'))
         })
     }
-    
-    boite__carrousel__fermeture.addEventListener('mousedown', function () {
+
+        boite__carrousel__fermeture.addEventListener('mousedown', function () {
         boite__carrousel.classList.remove('ouvrir');
+        elmImg.setAttribute('src', this.getAttribute('src'))
     })
 })()

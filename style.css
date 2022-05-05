@@ -1196,6 +1196,20 @@ hr {
   height: 100%;
 }
 
+.boite__carrousel__navigation {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  z-index: 1;
+}
+
+.boite__carrousel__navigation button {
+  width: 20px;
+  height: 20px;
+  margin: 5px 10px;
+  border-radius: 50%;
+}
+
 .galerie {
   display: flex;
   justify-content: center;
