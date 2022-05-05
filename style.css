@@ -1176,13 +1176,8 @@ hr {
 
 @media screen and (min-width: 500px) {
   .galerie {
-    width: 75%;
+    width: 88%;
   }
-}
-
-.wp-block-gallery {
-  display: flex;
-  margin-left: 5rem;
 }
 
 .home .site__main {
@@ -1326,7 +1321,7 @@ ANIMATION
 LAYOUT
 --------------------------------------------------------- */
 /*
-theme name: TP1 - Ngoc Quynh Pham
+theme name: TP2 - Ngoc Quynh Pham
 */
 .site {
   position: relative;

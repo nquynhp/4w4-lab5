@@ -56,11 +56,20 @@
     </div>
 </footer>
 
+<!-- Boîte modale -->
 <div class="boite__modale">
     <button class="boite__modale__fermeture">X</button>
     <p class="boite__modale__texte">
         Ceci est un premier test de boîte modale
     </p>
+</div>
+
+<!-- Carrousel -->
+<div class="boite__carrousel">
+    <button class="boite__carrousel__fermeture">X</button>
+    <section class="boite__carrousel__navigation">
+        Ceci est un premier test de la boîte carrousel
+    </section>
 </div>
 
 <?php wp_footer(); ?>

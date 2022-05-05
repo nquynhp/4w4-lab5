@@ -17,12 +17,19 @@ function cidw_4w4_enqueue(){
                         array(), filemtime(get_template_directory() . '/javascript/boite-modale.js'),
                         true); // true pour intégrer le .js en bas du document
 
-    wp_enqueue_script('cidw-4w4-boite-modale');
-
-    wp_enqueue_script('cidw-4w4-caroussel',
-                        get_template_directory_uri() . '/javascript/caroussel.js',
-                        array(), filemtime(get_template_directory() . '/javascript/caroussel.js'),
+    wp_register_script('cidw-4w4-carrousel',
+                        get_template_directory_uri() . '/javascript/carrousel.js',
+                        array(), filemtime(get_template_directory() . '/javascript/carrousel.js'),
                         true); // true pour intégrer le .js en bas du document
+
+    if(is_category('cours')){ // on se trouve dans la page de liste de cours
+        wp_enqueue_script('cidw-4w4-boite-modale');
+    }
+
+    if(is_front_page()){ // si on se trouve dans la page d'acceuil
+        wp_enqueue_script('cidw-4w4-carrousel');
+    }
+    
 }
 
 add_action("wp_enqueue_scripts", "cidw_4w4_enqueue");

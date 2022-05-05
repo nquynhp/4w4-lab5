@@ -23,12 +23,8 @@
         <div style="width:50%;height:0;padding-bottom:40%;position:relative;"><iframe src="https://giphy.com/embed/xT0GqjBCkO9BEiSEOk" width="90%" height="90%" style="position:absolute" frameBorder="0" class="giphy-embed" allowFullScreen></iframe></div>
     
         <?php if (have_posts()): the_post() ?>
-
                 <h1><?php the_title();  ?></h1>
-                <div class="galerie">
                         <?php the_content(); ?>
-                </div>
-        
         <?php endif ?>
 
         <?php the_post_thumbnail("thumbnail"); ?>
