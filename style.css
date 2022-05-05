@@ -926,7 +926,12 @@ hr {
   align-items: center;
 }
 
+.footer__article {
+  margin-top: 5vh;
+}
+
 .footer__adresse {
+  margin-top: 5vh;
   /** Taille d'écran pour les écrans mobiles */
 }
 
@@ -941,6 +946,7 @@ hr {
 }
 
 .footer__liens {
+  margin-top: 5vh;
   /** Taille d'écran pour les écrans mobiles */
 }
 
