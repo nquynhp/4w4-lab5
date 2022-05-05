@@ -2,6 +2,7 @@
 /********************Gestion du curseur********************/
 /***********************************************************/
 function gererCurseur() {
+    let d = document;
     leCurseur = d.querySelector(".curseur");
 
     if (!navigator.userAgent.includes("Mobile") && !navigator.userAgent.includes("Tablet")) {
@@ -40,3 +41,5 @@ function changerCurseur(event) {
         leCurseur.innerHTML = "";
     }
 }
+
+gererCurseur();

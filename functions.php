@@ -34,6 +34,8 @@ function cidw_4w4_enqueue(){
     if(is_front_page()){ // si on se trouve dans la page d'acceuil
         wp_enqueue_script('cidw-4w4-carrousel');
     }
+
+    wp_enqueue_script('cidw-4w4-curseur');
     
 }
 

@@ -71,6 +71,8 @@
     </section>
 </div>
 
+<div class="curseur"></div>
+
 <?php wp_footer(); ?>
 </body>
 
