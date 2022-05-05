@@ -66,13 +66,18 @@
 
     let elmImg = document.createElement('img');
     boite__carrousel.append(elmImg);
+    let index = 0;
 
     for (const img of galerie__img) {
         let bouton = document.createElement('button');
-        boite__carrousel__navigation.append(bouton)
-        console.log(img.tagName);
+        bouton.dataset.index = index++;
+        boite__carrousel__navigation.append(bouton);
+        bouton.addEventListener('mousedown', function(){
+            elmImg.setAttribute('src', galerie__img[this.dataset.index].getAttribute('src'));
+        })
+        // console.log(img.tagName);
         img.addEventListener('mousedown', function () {
-            console.log(this.getAttribute('src'));
+            // console.log(this.getAttribute('src'));
             boite__carrousel.classList.add('ouvrir');
             // console.log(boite__carrousel.classList);
             elmImg.setAttribute('src', this.getAttribute('src'))

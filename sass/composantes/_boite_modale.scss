@@ -71,13 +71,15 @@
         width: 100%;
         bottom: 0;
         z-index: 1;
+        display: flex;
+        justify-content: center;
         button{
             width: 20px;
             height: 20px;
             margin: 20px 10px;
             border-radius: 50%;
             &:focus{
-                background-color: #1b1b1b;
+                background-color: #F2527D;
             }
         }
     }
