@@ -54,3 +54,29 @@
         boite__modale.classList.remove('ouvrir'); 
     })
 })()
+
+
+(function(){
+    console.log("vive la boite carrousel");
+    let boite__modale = document.querySelector(".boite__carrousel");
+    let boite__carrousel__texte = document.querySelector(".boite__carrousel__navigation");
+    let cours__desc__ouvrir = document.querySelectorAll(".cours__desc__ouvrir");
+    let boite__carrousel__fermeture = document.querySelector(".boite__carrousel__fermeture");
+    console.log(cours__desc__ouvrir.length);
+
+
+    for (const bout of cours__desc__ouvrir) {
+        // console.log(bout.tagName);
+        bout.addEventListener('mousedown', function(){
+            // console.log(this.parentNode.parentNode.className);
+            console.log(this.parentNode.parentNode.children[0].innerHTML);
+            boite__carrousel.classList.add('ouvrir');
+            boite__carrousel__texte.innerHTML = this.parentNode.parentNode.children[0].innerHTML;
+        })
+    }
+
+    /***** Fermeture de la boîte carrousel */
+    boite__carrousel__fermeture.addEventListener('mousedown', function(){
+        boite__carrousel.classList.remove('ouvrir'); 
+    })
+})()
