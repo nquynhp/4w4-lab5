@@ -1206,8 +1206,12 @@ hr {
 .boite__carrousel__navigation button {
   width: 20px;
   height: 20px;
-  margin: 5px 10px;
+  margin: 20px 10px;
   border-radius: 50%;
+}
+
+.boite__carrousel__navigation button:focus {
+  background-color: #1b1b1b;
 }
 
 .galerie {

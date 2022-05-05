@@ -68,7 +68,6 @@
 <div class="boite__carrousel">
     <button class="boite__carrousel__fermeture">X</button>
     <section class="boite__carrousel__navigation">
-        Ceci est un premier test de la boîte carrousel
     </section>
 </div>
 
