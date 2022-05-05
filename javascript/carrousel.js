@@ -30,53 +30,54 @@
 
 
 
-(function(){
-    console.log("vive la boite modale");
-    let boite__modale = document.querySelector(".boite__modale");
-    let boite__modale__texte = document.querySelector(".boite__modale__texte");
-    let cours__desc__ouvrir = document.querySelectorAll(".cours__desc__ouvrir");
-    let boite__modale__fermeture = document.querySelector(".boite__modale__fermeture");
-    console.log(cours__desc__ouvrir.length);
+// (function(){
+//     console.log("vive la boite modale");
+//     let boite__modale = document.querySelector(".boite__modale");
+//     let boite__modale__texte = document.querySelector(".boite__modale__texte");
+//     let cours__desc__ouvrir = document.querySelectorAll(".cours__desc__ouvrir");
+//     let boite__modale__fermeture = document.querySelector(".boite__modale__fermeture");
+//     console.log(cours__desc__ouvrir.length);
 
 
-    for (const bout of cours__desc__ouvrir) {
-        // console.log(bout.tagName);
-        bout.addEventListener('mousedown', function(){
-            // console.log(this.parentNode.parentNode.className);
-            console.log(this.parentNode.parentNode.children[0].innerHTML);
-            boite__modale.classList.add('ouvrir');
-            boite__modale__texte.innerHTML = this.parentNode.parentNode.children[0].innerHTML;
-        })
-    }
+//     for (const bout of cours__desc__ouvrir) {
+//         // console.log(bout.tagName);
+//         bout.addEventListener('mousedown', function(){
+//             // console.log(this.parentNode.parentNode.className);
+//             console.log(this.parentNode.parentNode.children[0].innerHTML);
+//             boite__modale.classList.add('ouvrir');
+//             boite__modale__texte.innerHTML = this.parentNode.parentNode.children[0].innerHTML;
+//         })
+//     }
 
-    /***** Fermeture de la boîte modale */
-    boite__modale__fermeture.addEventListener('mousedown', function(){
-        boite__modale.classList.remove('ouvrir'); 
-    })
-})()
+//     /***** Fermeture de la boîte modale */
+//     boite__modale__fermeture.addEventListener('mousedown', function(){
+//         boite__modale.classList.remove('ouvrir'); 
+//     })
+// })();
 
 
-(function(){
+(function () {
     console.log("vive la boite carrousel");
-    let boite__modale = document.querySelector(".boite__carrousel");
-    let boite__carrousel__texte = document.querySelector(".boite__carrousel__navigation");
-    let cours__desc__ouvrir = document.querySelectorAll(".cours__desc__ouvrir");
-    let boite__carrousel__fermeture = document.querySelector(".boite__carrousel__fermeture");
-    console.log(cours__desc__ouvrir.length);
+    let boite__carrousel = document.querySelector(".boite__carrousel");
+    let boite__carrousel__navigation = document.querySelector(".boite__carrousel__navigation");
+    let galerie__img = document.querySelectorAll('.galerie img');
+    let boite__carrousel__fermeture = document.querySelector('.boite__carrousel__fermeture');
+    console.log(galerie__img.length);
 
+    let elmImg = document.createElement('img');
+    boite__carrousel.append(elmImg);
 
-    for (const bout of cours__desc__ouvrir) {
-        // console.log(bout.tagName);
-        bout.addEventListener('mousedown', function(){
-            // console.log(this.parentNode.parentNode.className);
-            console.log(this.parentNode.parentNode.children[0].innerHTML);
+    for (const img of galerie__img) {
+        console.log(img.tagName);
+        img.addEventListener('mousedown', function () {
+            console.log(this.getAttribute('src'));
             boite__carrousel.classList.add('ouvrir');
-            boite__carrousel__texte.innerHTML = this.parentNode.parentNode.children[0].innerHTML;
+            console.log(boite__carrousel.classList);
+            elmImg.setAttribute('src', this.getAttribute('src'))
         })
     }
-
-    /***** Fermeture de la boîte carrousel */
-    boite__carrousel__fermeture.addEventListener('mousedown', function(){
-        boite__carrousel.classList.remove('ouvrir'); 
+    
+    boite__carrousel__fermeture.addEventListener('mousedown', function () {
+        boite__carrousel.classList.remove('ouvrir');
     })
 })()
