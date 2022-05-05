@@ -4,6 +4,7 @@
   flex-direction: column;
   &__colonne{
     display : flex;
+    flex-direction: column;
     justify-content: space-between;
     // box-shadow: red;
 

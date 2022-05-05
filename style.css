@@ -897,6 +897,7 @@ hr {
 
 .site__footer__colonne {
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
   /** Taille d'écran pour les écrans mobiles */
 }
