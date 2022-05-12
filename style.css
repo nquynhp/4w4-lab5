@@ -412,7 +412,7 @@ h1 {
 }
 
 h2 {
-  font-size: 3rem;
+  font-size: clamp(0.5rem, 1.5rem, 3rem);
 }
 
 h3 {
@@ -806,7 +806,7 @@ hr {
 }
 
 .menu-item {
-  margin: 0;
+  margin-left: 5px;
   padding: 0;
   display: flex;
 }
@@ -994,6 +994,7 @@ hr {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: 5rem;
 }
 
 .wp-social-link {
@@ -1081,7 +1082,7 @@ hr {
 
 .menu-accueil-container,
 .menu-evenement-container {
-  width: 80%;
+  width: 100%;
 }
 
 .menu-accueil-container .menu,
@@ -1267,7 +1268,7 @@ html ::-webkit-scrollbar-thumb:hover {
   height: 3rem;
   width: 3rem;
   background-color: rgba(247, 248, 250, 0);
-  border: 10px solid #ff175594;
+  border: 10px solid #9200a994;
   border-radius: 50%;
   position: fixed;
   top: -1.5rem;
