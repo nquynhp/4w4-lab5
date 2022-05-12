@@ -29,6 +29,7 @@
         bouton.dataset.index = index++;
         boite__carrousel__navigation.append(bouton);
         bouton.addEventListener('mousedown', function(){
+            initialiseRadioBouton();
             // elmImg.setAttribute('src', galerie__img[this.dataset.index].getAttribute('src'));
             boite__carrousel__img.children[this.dataset.index].classList.add("img--ouvrir");
         })
@@ -44,6 +45,14 @@
         boite__carrousel.classList.remove('ouvrir');
         elmImg.setAttribute('src', this.getAttribute('src'));
     })
+
+    function initialiseRadioBouton(){
+        for(let i = 0; i < boite__carrousel__navigation.children.length; i++){
+            if(boite__carrousel__navigation.children[i].checked == false){
+                boite__carrousel__img.children[i].classList.remove('img--ouvrir');
+            }
+        }
+    }
 
 })()
 
