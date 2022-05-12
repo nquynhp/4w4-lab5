@@ -1,0 +1,1474 @@
+@charset "UTF-8";
+/**
+Theme Name: 2022-4w4 Exercice-4 - Ngoc Quynh Pham
+Author: Ngoc Quynh Pham
+Author URI: https://github.com/nquynhp/4w4-lab5.git
+Description: Ce thème servira de base de développement pour l'ensemble du cours 4W4. Chacune des étapes de développement se retrouvera sur gitHub à l'adresse: https://github.com/nquynhp/4w4-lab5.git
+Version: 1.0.0
+License: GNU General Public License v2 or later
+License URI: LICENSE
+Text Domain: cidw-4w4
+**/
+/* ---------------------------------------------------------
+VARIABLES
+--------------------------------------------------------- */
+/* ---------------- BACKGROUND */
+/* ---------------- LIENS */
+/* ---------------- LIENS FOOTER */
+/* ---------------- LIENS HEADER */
+/* ---------------- FONT */
+/* ---------------- Bouton / lien menu*/
+/* ------------------------------------- points de rupture des media queries */
+/* ---------------------------------------------------------
+INITIALISATION
+--------------------------------------------------------- */
+/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
+/* Document
+	 ========================================================================== */
+/**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in iOS.
+ */
+html {
+  line-height: 1.15;
+  -webkit-text-size-adjust: 100%;
+}
+
+/* Sections
+	 ========================================================================== */
+/**
+ * Remove the margin in all browsers.
+ */
+body {
+  margin: 0;
+}
+
+/**
+ * Render the `main` element consistently in IE.
+ */
+main {
+  display: block;
+}
+
+/**
+ * Correct the font size and margin on `h1` elements within `section` and
+ * `article` contexts in Chrome, Firefox, and Safari.
+ */
+h1 {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+/* Grouping content
+	 ========================================================================== */
+/**
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Show the overflow in Edge and IE.
+ */
+hr {
+  box-sizing: content-box;
+  height: 0;
+  overflow: visible;
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+pre {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+
+/* Text-level semantics
+	 ========================================================================== */
+/**
+ * Remove the gray background on active links in IE 10.
+ */
+a {
+  background-color: transparent;
+}
+
+/**
+ * 1. Remove the bottom border in Chrome 57-
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ */
+abbr[title] {
+  border-bottom: none;
+  text-decoration: underline;
+  text-decoration: underline dotted;
+}
+
+/**
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
+b,
+strong {
+  font-weight: bolder;
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+code,
+kbd,
+samp {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+
+/**
+ * Add the correct font size in all browsers.
+ */
+small {
+  font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` elements from affecting the line height in
+ * all browsers.
+ */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+/* Embedded content
+	 ========================================================================== */
+/**
+ * Remove the border on images inside links in IE 10.
+ */
+img {
+  border-style: none;
+}
+
+/* Forms
+	 ========================================================================== */
+/**
+ * 1. Change the font styles in all browsers.
+ * 2. Remove the margin in Firefox and Safari.
+ */
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+}
+
+/**
+ * Show the overflow in IE.
+ * 1. Show the overflow in Edge.
+ */
+button,
+input {
+  overflow: visible;
+}
+
+/**
+ * Remove the inheritance of text transform in Edge, Firefox, and IE.
+ * 1. Remove the inheritance of text transform in Firefox.
+ */
+button,
+select {
+  text-transform: none;
+}
+
+/**
+ * Correct the inability to style clickable types in iOS and Safari.
+ */
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button;
+}
+
+/**
+ * Remove the inner border and padding in Firefox.
+ */
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+/**
+ * Restore the focus styles unset by the previous rule.
+ */
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+/**
+ * Correct the padding in Firefox.
+ */
+fieldset {
+  padding: 0.35em 0.75em 0.625em;
+}
+
+/**
+ * 1. Correct the text wrapping in Edge and IE.
+ * 2. Correct the color inheritance from `fieldset` elements in IE.
+ * 3. Remove the padding so developers are not caught out when they zero out
+ *		`fieldset` elements in all browsers.
+ */
+legend {
+  box-sizing: border-box;
+  color: inherit;
+  display: table;
+  max-width: 100%;
+  padding: 0;
+  white-space: normal;
+}
+
+/**
+ * Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */
+progress {
+  vertical-align: baseline;
+}
+
+/**
+ * Remove the default vertical scrollbar in IE 10+.
+ */
+textarea {
+  overflow: auto;
+}
+
+/**
+ * 1. Add the correct box sizing in IE 10.
+ * 2. Remove the padding in IE 10.
+ */
+[type="checkbox"],
+[type="radio"] {
+  box-sizing: border-box;
+  padding: 0;
+}
+
+/**
+ * Correct the cursor style of increment and decrement buttons in Chrome.
+ */
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+ * 1. Correct the odd appearance in Chrome and Safari.
+ * 2. Correct the outline style in Safari.
+ */
+[type="search"] {
+  -webkit-appearance: textfield;
+  outline-offset: -2px;
+}
+
+/**
+ * Remove the inner padding in Chrome and Safari on macOS.
+ */
+[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+ * 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Change font properties to `inherit` in Safari.
+ */
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  font: inherit;
+}
+
+/* Interactive
+	 ========================================================================== */
+/*
+ * Add the correct display in Edge, IE 10+, and Firefox.
+ */
+details {
+  display: block;
+}
+
+/*
+ * Add the correct display in all browsers.
+ */
+summary {
+  display: list-item;
+}
+
+/* Misc
+	 ========================================================================== */
+/**
+ * Add the correct display in IE 10+.
+ */
+template {
+  display: none;
+}
+
+/**
+ * Add the correct display in IE 10.
+ */
+[hidden] {
+  display: none;
+}
+
+/* Inherit box-sizing to more easily change it's value on a component level.
+@link http://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/ */
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+/* ---------------------------------------------------------
+ÉLÉMENTS
+--------------------------------------------------------- */
+a {
+  color: #f6cad6;
+}
+
+a:visited {
+  color: #D5D971;
+}
+
+a:hover, a:focus, a:active {
+  color: #bdb69e;
+}
+
+a:focus {
+  outline: thin dotted;
+}
+
+a:hover, a:active {
+  outline: 0;
+}
+
+.site__footer a {
+  color: #000000;
+}
+
+.site__footer a:visited {
+  color: #ffcad8;
+}
+
+.site__footer a:hover, .site__footer a:focus, .site__footer a:active {
+  color: #851533;
+}
+
+.site__footer a:focus {
+  outline: thin dotted;
+}
+
+.site__footer a:hover, .site__footer a:active {
+  outline: 0;
+}
+
+.site__header a {
+  color: #030303;
+}
+
+.site__header a:visited {
+  color: #ffcad8;
+}
+
+.site__header a:hover, .site__header a:focus, .site__header a:active {
+  color: #851533;
+}
+
+.site__header a:focus {
+  outline: thin dotted;
+}
+
+.site__header a:hover, .site__header a:active {
+  outline: 0;
+}
+
+h1 {
+  font-size: clamp(2rem, 8vw, 5rem);
+}
+
+h2 {
+  font-size: clamp(0.5rem, 1.5rem, 3rem);
+}
+
+h3 {
+  font-size: 2rem;
+}
+
+h4 {
+  font-size: 1.8rem;
+}
+
+h5 {
+  font-size: 1.6rem;
+}
+
+h6 {
+  font-size: 1.3rem;
+}
+
+p {
+  font-size: 1rem;
+  font-family: "Karla", sans-serif;
+}
+
+/************** La police*****/
+h1, h2 {
+  font-family: fantasy;
+}
+
+h3, h4, h5, h6 {
+  font-family: "Karla", sans-serif;
+}
+
+a {
+  font-size: clamp(0.9rem, 1vw, 1.2rem);
+  font-family: "Karla", sans-serif;
+}
+
+/* ---------------------------------------------------------
+COMPOSANTES
+--------------------------------------------------------- */
+body {
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+}
+
+.site__main {
+  margin: 20px;
+  padding: 10px 15px;
+  background-color: #F2F2F2;
+  border-radius: 8px;
+  box-shadow: #7a7a6e 1px -1px 10px;
+  background: linear-gradient(-45deg, #ee7752, #e7b3c7, #e9799d, #f1c7da);
+  background-size: 100%;
+  animation: animationGradient 15s ease infinite;
+}
+
+@keyframes animationGradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/*===================================================*/
+/*====== coeur ========*/
+/*==================================================*/
+.coeur {
+  background-color: #ffcad8;
+  display: inline-block;
+  height: 30px;
+  margin: 0 30px;
+  position: relative;
+  top: 0;
+  transform: rotate(-45deg);
+  width: 30px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.coeur:before,
+.coeur:after {
+  content: "";
+  background-color: #ffcad8;
+  border-radius: 50%;
+  height: 30px;
+  position: absolute;
+  width: 30px;
+}
+
+.coeur:before {
+  top: -15px;
+  left: 0;
+}
+
+.coeur:after {
+  left: 15px;
+  top: 0;
+}
+
+/*===================================================*/
+/*====== La page qui affiche tous les cours ========*/
+/*==================================================*/
+.formation {
+  display: flex;
+  flex-direction: column;
+  /*Chaque boîte de cours*/
+  /*Lorsqu'on survole un des rectangles de cours*/
+  /*Lorsque que le lien du cours a déjà été survolé*/
+}
+
+.formation .cours__nbre-heure {
+  color: #F2F2F2;
+}
+
+.formation__titre {
+  font-size: 2rem;
+  color: #ffcad8;
+  margin: 10px 0px;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-weight: lighter;
+}
+
+.formation__liste {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.formation__liste .web {
+  background-image: url("https://s2.svgbox.net/octicons.svg?ic=globe&color=000");
+}
+
+.formation__liste .jeu {
+  background-image: url("https://s2.svgbox.net/materialui.svg?ic=games");
+}
+
+.formation__liste .design {
+  background-image: url("https://s2.svgbox.net/materialui.svg?ic=color_lens");
+}
+
+.formation__liste .creation-3d {
+  background-image: url("https://s2.svgbox.net/materialui.svg?ic=view_in_ar");
+}
+
+.formation__liste .utilitaire {
+  background-image: url("https://s2.svgbox.net/octicons.svg?ic=tools-bold");
+}
+
+.formation__liste .video {
+  background-image: url("https://s2.svgbox.net/octicons.svg?ic=device-camera-video");
+}
+
+.formation__cours {
+  background-color: #F2527D;
+  box-shadow: #f2ebd5c9 1px -2px 10px;
+  border-radius: 5px;
+  background-position: 95% 98%;
+  background-repeat: no-repeat;
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 10px;
+  transition: transform .5s;
+}
+
+.formation__cours__invisible {
+  display: none;
+}
+
+@media screen and (min-width: 800px) {
+  .formation__cours {
+    width: 45%;
+  }
+}
+
+@media screen and (min-width: 1100px) {
+  .formation__cours {
+    width: 30%;
+  }
+}
+
+.formation__cours:hover {
+  transform: translate(5px, -10px);
+}
+
+.formation__cours a:visited {
+  color: #ffcad8;
+}
+
+/*================================*/
+/*====== ÉLÉMENTS DES COURS ========*/
+/*================================*/
+.cours__titre {
+  font-size: 1.5rem;
+  color: #ffcad8;
+  margin: 5px 0px;
+}
+
+.cours__sigle {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #F2EBD5;
+  margin: 0;
+}
+
+.cours__description {
+  font-size: 1rem;
+}
+
+.cours__nbre-heure {
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  color: #ff4a7a;
+}
+
+.svg_menu_principal {
+  width: 45px;
+  height: 45px;
+}
+
+/*Modification des images dans la section Cours*/
+.formation__cours {
+  display: flex;
+}
+
+.article__contenu__figure {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-self: center;
+  justify-self: center;
+}
+
+/* Ligne au dessus des descriptions */
+hr {
+  background-color: #ffcad8;
+  padding: 3px;
+  border: none;
+}
+
+/** Bouton La suite pour l'ouverture de la boîte modale*/
+.cours__desc__ouvrir {
+  display: flex;
+  margin-top: 1.5vh;
+  border-radius: 10%;
+}
+
+/*================================*/
+/*====== AJOUT COMMENTAIRE========*/
+/*================================*/
+.site__header {
+  background-color: #F2527D;
+  color: #ffcad8;
+  display: flex;
+  flex-direction: column;
+  /** Taille d'écran pour les écrans mobiles */
+  /*================================*/
+  /*====== AJOUT COMMENTAIRE========*/
+  /*================================*/
+}
+
+@media screen and (min-width: 200px) {
+  .site__header {
+    flex-direction: row;
+    align-items: center;
+  }
+}
+
+.site__header__titre {
+  display: flex;
+  align-items: center;
+  height: 90px;
+}
+
+.site__header__titre h1 {
+  font-size: clamp(0.75rem, 3vw, 5rem);
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  padding-left: 10px;
+}
+
+.site__header .site__header__titre {
+  flex: 1;
+}
+
+.site__header .header__titre:hover {
+  color: #C596D9;
+}
+
+/*================================*/
+/*====== AJOUT COMMENTAIRE========*/
+/*================================*/
+.util {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media screen and (min-width: 900px) {
+  .util {
+    margin-left: auto;
+    align-items: flex-end;
+  }
+}
+
+.util .util__lien a svg {
+  color: #ffcad8;
+}
+
+.header__description {
+  padding-left: 5%;
+}
+
+#burger {
+  z-index: 99;
+}
+
+#chk-burger {
+  display: none;
+}
+
+#chk-burger:checked ~ .menu-principal-container {
+  display: block;
+}
+
+.menu-principal-container {
+  display: none;
+}
+
+.menu-principal-container .menu {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  padding-left: 15%;
+  animation: anim_menu_principal .85s ease-in-out;
+}
+
+@keyframes anim_menu_principal {
+  0% {
+    padding-left: 25%;
+  }
+  50% {
+    padding-left: 30%;
+  }
+  80% {
+    padding-left: 0%;
+  }
+  100% {
+    padding-left: 15%;
+  }
+  /***** FIN DE L'ANIMATION DU MENU PRINCIPAL ****/
+}
+
+@keyframes anim_menu_principal {
+  0% {
+    padding-left: 25%;
+  }
+  50% {
+    padding-left: 30%;
+  }
+  80% {
+    padding-left: 0%;
+  }
+  100% {
+    padding-left: 15%;
+  }
+  /***** FIN DE L'ANIMATION DU MENU PRINCIPAL ****/
+}
+
+.menu-item {
+  margin-left: 5px;
+  padding: 0;
+  display: flex;
+}
+
+.menu-item a {
+  display: block;
+  text-decoration: none;
+  padding: 4px;
+  margin: 5px;
+  transition: all .5s ease-in-out;
+  background-color: #D94E73;
+  border-radius: 10px;
+}
+
+.menu-item a:hover {
+  background-color: #f9e08e;
+  border-radius: 10px;
+  transform: translateY(-5px);
+}
+
+.menu-item li {
+  padding-left: auto;
+}
+
+.menu-item li:hover {
+  padding-left: 20px;
+}
+
+@media screen and (min-width: 1100px) {
+  #burger {
+    display: none;
+  }
+  .menu-principal-container {
+    display: block;
+  }
+  .home #burger {
+    display: block;
+  }
+  .home .menu-principal-container {
+    display: none;
+  }
+}
+
+/**************************************************************/
+/************** Navigation catégorie cours ********************/
+/*************************************************************/
+.menu-categorie_cours-container .menu {
+  display: flex;
+  background-color: #3A3940;
+  padding-left: none;
+}
+
+.menu-categorie_cours-container .menu .menu-item {
+  margin: 5px 10px;
+  display: flex;
+  border-radius: 10px;
+  transition: transform 1s ease-in-out;
+}
+
+.menu-categorie_cours-container .menu .menu-item:hover {
+  transform: translateY(-5px);
+}
+
+.menu-categorie_cours-container .menu .menu-item a {
+  color: #F299B1;
+}
+
+.menu-categorie_cours-container .menu .menu-item:hover a {
+  background-color: #f9e08e;
+}
+
+.menu-categorie_cours-container .menu .menu-item:hover a a {
+  color: #851533;
+}
+
+.menu-categorie_cours-container .menu .menu-item .current-menu-item {
+  background-color: #f5e9ad;
+}
+
+.menu-categorie_cours-container .menu .menu-item .current-menu-item a {
+  color: #facdda;
+}
+
+.site__footer {
+  display: flex;
+  flex-direction: column;
+}
+
+.site__footer__colonne {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  /** Taille d'écran pour les écrans mobiles */
+}
+
+@media screen and (max-width: 200px) {
+  .site__footer__colonne {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+  }
+}
+
+.site__footer__colonne section {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #ddd;
+  box-shadow: 8px 10px rgba(255, 255, 255, 0.4);
+  flex: 0 0 30%;
+}
+
+.site__footer__ligne {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer__article {
+  margin-top: 5vh;
+}
+
+.footer__adresse {
+  margin-top: 5vh;
+  /** Taille d'écran pour les écrans mobiles */
+}
+
+@media screen and (max-width: 200px) {
+  .footer__adresse {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+  }
+}
+
+.footer__liens {
+  margin-top: 5vh;
+  /** Taille d'écran pour les écrans mobiles */
+}
+
+@media screen and (min-width: 200px) {
+  .footer__liens .menu-item {
+    display: flex;
+    justify-content: center;
+    margin-right: 6vw;
+  }
+}
+
+.site__footer {
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  background-color: #F2527D;
+  padding: 15px;
+}
+
+.site__footer__menu__ul {
+  display: flex;
+  list-style-type: none;
+  justify-content: center;
+}
+
+.site__footer__menu__ul .menu-item {
+  margin: 10px 5px;
+}
+
+.site__footer__menu__ul .menu-item a {
+  display: flex;
+  align-items: center;
+  padding: 3px;
+}
+
+/*================================*/
+/*====== AJOUT COMMENTAIRE========*/
+/*================================*/
+.footer__titre,
+.footer__presentation,
+.footer__author {
+  color: #000000;
+  text-align: center;
+}
+
+.footer__sociaux {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5rem;
+}
+
+.wp-social-link {
+  transform: translateY(5px);
+}
+
+.footer__auteur {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  font-size: 12px;
+}
+
+.footer__adresse_college {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  font-size: 12px;
+}
+
+/*================================*/
+/*====== AJOUT COMMENTAIRE========*/
+/*================================*/
+.footer__menu nav li::marker {
+  text-decoration: none;
+}
+
+.footer__menu nav ul {
+  display: flex;
+  list-style-type: none;
+}
+
+.footer__menu nav li {
+  justify-content: space-around;
+  padding-right: 20px;
+}
+
+/*========================================*/
+/*========================================*/
+.recherche {
+  background-color: #D94E73;
+  width: 205px;
+  height: 23px;
+  position: relative;
+}
+
+.recherche__input {
+  background-color: transparent;
+  width: 100%;
+  transition: background-color .35s;
+  border: none;
+  outline: none;
+}
+
+.recherche__input:focus {
+  background-color: #272727;
+}
+
+.recherche__bouton {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+}
+
+.recherche:hover {
+  background-color: #fa90ac;
+}
+
+/*========================================*/
+/*========================================*/
+.footer__recherche {
+  display: flex;
+  justify-content: center;
+}
+
+.recherche__bouton {
+  width: 20%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.menu-accueil-container,
+.menu-evenement-container {
+  width: 100%;
+}
+
+.menu-accueil-container .menu,
+.menu-evenement-container .menu {
+  display: flex;
+  flex-wrap: wrap;
+  border-radius: 15px;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.menu-accueil-container .menu .menu-item-icone,
+.menu-evenement-container .menu .menu-item-icone {
+  background-image: url("https://s2.svgbox.net/materialui.svg?ic=school&color=000");
+}
+
+.menu-accueil-container .menu .menu-item,
+.menu-evenement-container .menu .menu-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 20%;
+  flex: 0 0 20%;
+  height: 90px;
+}
+
+.menu-accueil-container .menu .menu-item a,
+.menu-evenement-container .menu .menu-item a {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  font-size: clamp(1rem, 2vw, 1rem);
+  color: #F299B1;
+  height: 100%;
+}
+
+.menu-accueil-container .menu .menu-item a .menu-item-description,
+.menu-evenement-container .menu .menu-item a .menu-item-description {
+  font-size: clamp(0.8rem, 1.5vw, 1rem);
+}
+
+.menu-accueil-container .menu .menu-item a .menu-item-icone,
+.menu-evenement-container .menu .menu-item a .menu-item-icone {
+  width: 2rem;
+  height: 2rem;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  margin-top: auto;
+}
+
+.evenement__resume {
+  background-color: #840016;
+}
+
+/********************************/
+/******* Boite modale **********/
+/********************************/
+.boite__modale, .boite__carrousel {
+  position: fixed;
+  top: 25%;
+  left: 25%;
+  background-color: #1b1b1b;
+  box-shadow: 8px 10px rgba(59, 59, 59, 0.732);
+  color: white;
+  width: 50%;
+  height: 50%;
+  transform: scale(0);
+  transition: all .50s ease-in-out;
+  /** Texte dans la boîte modale**/
+}
+
+.boite__modale__texte, .boite__carrousel__texte {
+  padding-top: 5vh;
+  padding-bottom: 5vh;
+  padding-left: 5vh;
+  padding-right: 5vh;
+}
+
+.boite__modale__fermeture, .boite__carrousel__fermeture {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  top: 10px;
+  right: 10px;
+  z-index: 1;
+  border-radius: 50%;
+  border-color: white;
+  margin-left: 10px;
+  margin-top: 10px;
+}
+
+.boite__modale__fermeture__hover, .boite__carrousel__fermeture__hover {
+  background-color: gray;
+}
+
+.ouvrir {
+  transform: scale(1);
+}
+
+/********************************/
+/******* Boite carrousel **********/
+/********************************/
+.boite__carrousel {
+  top: 12.5%;
+  left: 12.5%;
+  width: 75%;
+  height: 75%;
+}
+
+.boite__carrousel img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  animation: anim_caroussel 1s ease-in-out;
+}
+
+.boite__carrousel__navigation {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  background-color: #86384d6b;
+}
+
+.boite__carrousel__navigation button {
+  width: 20px;
+  height: 20px;
+  margin: 20px 10px;
+  border-radius: 50%;
+}
+
+.boite__carrousel__navigation button:focus {
+  background-color: #F2527D;
+}
+
+@keyframes anim_caroussel {
+  0% {
+    transform: translateX(0vw);
+  }
+  100% {
+    transform: translateX(100vw);
+  }
+}
+
+.galerie {
+  display: flex;
+  justify-content: center;
+  width: 95%;
+}
+
+@media screen and (min-width: 500px) {
+  .galerie {
+    width: 88%;
+  }
+}
+
+.home .site__main {
+  justify-content: center;
+}
+
+html {
+  /*La barre derriere*/
+  /*La barre*/
+}
+
+html ::-webkit-scrollbar {
+  width: 15px;
+}
+
+html ::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+html ::-webkit-scrollbar-thumb {
+  background-color: #0f0f0f;
+}
+
+html ::-webkit-scrollbar-thumb:hover {
+  background-color: #fe0077;
+}
+
+/* CSS pour l'aspect visuel et le contrôle d'un curseur personnalisé
+==================================================================== */
+.curseur {
+  height: 3rem;
+  width: 3rem;
+  background-color: rgba(247, 248, 250, 0);
+  border: 10px solid #9200a994;
+  border-radius: 50%;
+  position: fixed;
+  top: -1.5rem;
+  left: -1.5rem;
+  z-index: 500;
+  pointer-events: none;
+  will-change: transform;
+  /*Transition*/
+  transition: transform 0.9s cubic-bezier(0.15, 0.9, 0.35, 0.95), opacity 0.5s;
+}
+
+/* ---------------------------------------------------------
+ANIMATION
+--------------------------------------------------------- */
+/*=================================*/
+/*====== ANIMATION DU BLOC ========*/
+/*=================================*/
+.animation {
+  display: flex;
+  width: 90%;
+  justify-content: space-around;
+  padding: 2%;
+}
+
+.animation__bloc {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  color: #000000;
+  background-color: #ffcad8;
+  animation: anim_bloc 1s forwards;
+}
+
+@keyframes anim_bloc {
+  0% {
+    transform: translateX(100vh);
+  }
+  50% {
+    transform: translateX(-5vh);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+/*===========================================*/
+/*====== ANIMATION DU MENU PRINCIPAL ========*/
+/*===========================================*/
+/*===================================*/
+/*====== ANIMATION DU COEUR ========*/
+/*==================================*/
+.coeur {
+  animation: animCoeur 1.2s infinite;
+}
+
+@keyframes animCoeur {
+  0% {
+    transform: rotate(-45deg) scale(0.8);
+  }
+  15% {
+    transform: rotate(-45deg) scale(1);
+  }
+  25% {
+    transform: rotate(-45deg) scale(0.8);
+  }
+  10% {
+    transform: rotate(-45deg) scale(1.1);
+  }
+  45% {
+    transform: rotate(-45deg) scale(0.8);
+  }
+  100% {
+    transform: rotate(-45deg) scale(0.8);
+  }
+}
+
+.burger {
+  margin: 1.5rem 1.5rem;
+  position: relative;
+  width: 2.5rem;
+  height: 2.5rem;
+  background-color: transparent;
+  border-radius: 10%;
+  overflow: hidden;
+}
+
+.burger .burger__ligne {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  transition: all 0.5s ease-in-out;
+  background-color: #bd83d8;
+}
+
+.burger .burger__ligne:nth-of-type(1) {
+  clip-path: polygon(0 0, 100% 0, 100% 20%, 0 20%);
+}
+
+.burger .burger__ligne:nth-of-type(2) {
+  clip-path: polygon(0 40%, 100% 40%, 100% 60%, 0 60%);
+}
+
+.burger .burger__ligne:nth-of-type(3) {
+  clip-path: polygon(0 80%, 100% 80%, 100% 100%, 0 100%);
+}
+
+#chk-burger:checked ~ .burger .burger__ligne:nth-of-type(1) {
+  clip-path: polygon(7.1% -7.1%, 107.1% 92.9%, 92.9% 107.1%, -7.1% 7.1%);
+}
+
+#chk-burger:checked ~ .burger .burger__ligne:nth-of-type(2) {
+  clip-path: polygon(40% 40%, 60% 40%, 60% 60%, 40% 60%);
+}
+
+#chk-burger:checked ~ .burger .burger__ligne:nth-of-type(3) {
+  clip-path: polygon(-7.1% 92.9%, 92.9% -7.1%, 107.1% 7.1%, 7.1% 107.1%);
+}
+
+/* ---------------------------------------------------------
+LAYOUT
+--------------------------------------------------------- */
+/*
+theme name: TP2 - Ngoc Quynh Pham
+*/
+.site {
+  position: relative;
+  background-color: #ffffff;
+  font-family: monaco, Consolas, "Lucida Console";
+}
+
+@media screen and (min-width: 1100px) {
+  .site {
+    width: 100vw;
+  }
+}
+
+.home::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  clip-path: circle(43.1% at 85% 73%);
+  z-index: -1;
+}
+
+.site__header {
+  grid-area: header;
+  background-color: #F2527D;
+}
+
+@media screen and (min-width: 1100px) {
+  .site__header {
+    width: 100vw;
+  }
+}
+
+.site__barre {
+  grid-area: sidebar;
+  background-color: #F299B1;
+}
+
+.site__main {
+  grid-area: main;
+  background-color: rbga(#fa90acb6, 0.5);
+  width: 90vw;
+  display: flex;
+  flex-direction: column;
+}
+
+@media screen and (min-width: 800px) {
+  .site__main {
+    width: 75vw;
+  }
+}
+
+.site__footer {
+  grid-area: footer;
+  background-color: #F2527D;
+}
+
+@media screen and (min-width: 1100px) {
+  .site__footer {
+    width: 100vw;
+  }
+}
+
+.site {
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-areas: "sidebar" "header" "main" "footer";
+}
+
+@media screen and (min-width: 800px) {
+  .site {
+    grid-template-columns: 300px auto;
+    grid-template-areas: "header header" "sidebar main" "footer footer";
+  }
+  .home {
+    grid-template-columns: 300px auto;
+    grid-template-areas: "header header" "sidebar main" "footer footer";
+  }
+}
+/*# sourceMappingURL=style.css.map */

@@ -29,7 +29,7 @@ width: 100%;
             display : flex;
             flex-direction: column;
             justify-content: space-between;
-            align-items: center;
+            align-items: flex-start;
             width: 20%;
             flex : 0 0 20%;
             height : 90px;
@@ -37,7 +37,7 @@ width: 100%;
             a{
                 display : flex;
                 flex-direction: column;
-                align-items: center;
+                align-items: flex-start;
                 font-size: clamp(1rem, 2vw, 1rem);
                 color: $color__bouton__color;
                 height : 100%;

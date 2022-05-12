@@ -16,16 +16,16 @@
     display: block;
 }
 
-.menu{
-    background-color: #f6cad6;
-    list-style-type: none;
-    margin : 0;
-    padding :0;
+// .menu{
+//     // background-color: #f6cad6;
+//     list-style-type: none;
+//     margin : 0;
+//     padding :0;
     
     
-        padding-left: 15%;
-        animation: anim_menu_principal .85s ease-in-out;
-}
+//         padding-left: 15%;
+//         animation: anim_menu_principal .85s ease-in-out;
+// }
 
 // .menu-principal-container {
 //     display: none;
@@ -34,7 +34,7 @@
 .menu-principal-container {
     display : none;
     .menu{
-        background-color: #f6cad6;
+        // background-color: #f6cad6;
         list-style-type: none;
         margin : 0;
         padding :0;
@@ -61,18 +61,6 @@
             padding-left: 15%;
         } /***** FIN DE L'ANIMATION DU MENU PRINCIPAL ****/
     }
-}
-
-
-.menu{
-    background-color: #f6cad6;
-    list-style-type: none;
-    margin : 0;
-    padding :0;
-    
-    
-        padding-left: 15%;
-        animation: anim_menu_principal .85s ease-in-out;
 }
 
 @keyframes anim_menu_principal{
