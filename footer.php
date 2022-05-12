@@ -69,6 +69,7 @@
     <button class="boite__carrousel__fermeture">X</button>
     <section class="boite__carrousel__navigation">
     </section>
+    <section class="boite__carrousel__img"></section>
 </div>
 
 <div class="curseur"></div>

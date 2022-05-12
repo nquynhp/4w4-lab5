@@ -11,10 +11,9 @@
     box-shadow: 8px 10px rgba(59, 59, 59, 0.732);
     color: white;
     width: 50%;
-    height: 50%;
+    height: auto;
     transform: scale(0);
     transition: all .50s ease-in-out;
-        // &__fermeture{}
     
     /** Texte dans la boîte modale**/    
     &__texte{
@@ -22,6 +21,8 @@
         padding-bottom: 5vh;
         padding-left: 5vh;
         padding-right: 5vh;
+        line-height: 3.5vh;
+        text-align: justify;
     }
 
     &__fermeture{
@@ -40,31 +41,55 @@
             background-color: rgb(128, 128, 128);
         }
     }
-
-
 }
 
 .ouvrir{
     transform: scale(1); 
 }
 
+
 /********************************/
 /******* Boite carrousel **********/
 /********************************/
 .boite__carrousel{
-    
-    top: 12.5%;
-    left: 12.5%;
-    width: 75%;
-    height: 75%;
-    img{
+    overflow: hidden;
+
+    top: 25%;
+    left: 25%;
+    width: 50%;
+    height: 50%;
+
+    @media screen and (min-width:$largeur__media--mobile) {
+        top: 12.5%;
+        left: 12.5%;
+        width: 75%;
+        height: 75%;
+    }
+
+    &__img { //le conteneur d'images
         position: absolute;
         top: 0;
         left: 0;
         object-fit: cover;
         width: 100%;
         height: 100%;
-        
+
+        img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            object-fit: cover;
+            width: 100%;
+            height: 100%;
+            opacity: 0;
+            transition: all 1s ease-in-out;
+            transform: translateX(-100%);
+
+            &.img--ouvrir{
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
     }
 
     &__navigation{
@@ -75,28 +100,16 @@
         display: flex;
         justify-content: center;
         background-color: #86384d6b;
-        button{
+        .bouton {
             width: 20px;
             height: 20px;
             margin: 20px 10px;
             border-radius: 50%;
-            animation: anim_caroussel 1s ease-in-out;
+            
             &:focus{
                 background-color: #F2527D;
             }
         }
     }
-
-    @keyframes anim_caroussel {
-        0% {
-            transform: translateX(-100vw);
-        }
-
-
-        100% {
-            transform: translateX(0vw);
-        }
-    }
-
     
 }

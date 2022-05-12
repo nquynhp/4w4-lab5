@@ -9,6 +9,7 @@ theme name: TP2 - Ngoc Quynh Pham
     @media screen and (min-width: $largeur__media--desktop) {
         width: 100vw;
     }
+    overflow-x: hidden;
 }
 
 // permet de formater le .site
@@ -29,8 +30,9 @@ theme name: TP2 - Ngoc Quynh Pham
 
 
 .site__header{
-    grid-area: header;  
+    grid-area: header;
     background-color: $color__background-header;
+    padding-right: 5vw;
     @media screen and (min-width: $largeur__media--desktop) {
         width: 100vw;
     }
