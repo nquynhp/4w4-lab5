@@ -1221,18 +1221,25 @@ hr {
   z-index: 1;
   display: flex;
   justify-content: center;
-  background-color: #86384d6b;
+  background-color: #0000006b;
 }
 
 .boite__carrousel__navigation .bouton {
-  width: 20px;
-  height: 20px;
+  width: 50px;
+  height: 50px;
   margin: 20px 10px;
   border-radius: 50%;
 }
 
 .boite__carrousel__navigation .bouton:focus {
   background-color: #F2527D;
+}
+
+.boite__carrousel__navigation input {
+  width: 30px;
+  height: 30px;
+  margin-left: 4px;
+  margin-right: 4px;
 }
 
 .galerie {
@@ -1245,6 +1252,10 @@ hr {
   .galerie {
     width: 88%;
   }
+}
+
+.wp-block-image:hover {
+  opacity: 0.75;
 }
 
 .home .site__main {

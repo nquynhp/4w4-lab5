@@ -28,9 +28,10 @@
             background-color: <?= get_theme_mod("background_body"); ?>;
         }
 
-        /* .site__main{
-            background-color:;
-        }  */
+        /** Change la couleur du curseur **/
+        .site{
+            border:10px solid <?= get_theme_mod("border_color_curseur"); ?>;
+        }
     </style>
 </head>
 <body <?php body_class("site"); ?> style="background-color:<?= get_theme_mod("background_body"); ?>;" >

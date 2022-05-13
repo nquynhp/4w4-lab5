@@ -23,6 +23,12 @@
                                 "sanitize_callback"=> "sanitize_hex_color"
                             ]);
 
+    $manager->add_setting('border_color_curseur', 
+                            [
+                                "default"=>"#9200a994",
+                                "sanitize_callback"=> "sanitize_hex_color"
+                            ]);                        
+
     // $manager->add_control('background_body',
     //                         [
     //                             "section"=>"apparence_body",
@@ -37,24 +43,10 @@
     $manager->add_control(new WP_Customize_Color_Control($manager, 'background_clippath',
                             ["section"=>"apparence_body",
                             "label"=>"Obtenir la couleur du clip path"]));
+
+    $manager->add_control(new WP_Customize_Color_Control($manager, 'border_color_curseur',
+                            ["section"=>"apparence_body",
+                            "label"=>"Obtenir la couleur du curseur"]));
  });
 
-
-//   La méthode add_section( id de la section,
-//                            [
-//                                "title" => "Le titre de la section"
-//                            ]);
-//   La méthode add_setting ( Le nom de la variable php qui sera utilisée dans notre thème,
-//                             [   "default" => la valeur par défaut de la variable,
-//                                 "sanitize_callback"=> "sanitize_hex_color" // permet de valider/filtrer la donnée
-//                             ]);   
-//   La méthode add_control ( le nom de la variable php qui sera utilisé dans notre thème,
-//                             ["section"=> le ID de la section,
-//                              "setting"=> le nom de la variable,
-//                              "label"=> l'étiquette de la variable dans le formulaire 
-//                              ])                          
-//   Pour utiliser une interface de couleur plus complexe on peut utiliser 
-//   La méthode add_control (new WP_Customize_Color_Control($manager, le nom de la variable php,
-//                         ["section"=>"le ID de la section",
-//                         "label"=>l'étiquette de la variable dans le formulaire  ])) -->
 ?>
