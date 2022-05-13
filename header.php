@@ -29,7 +29,7 @@
         }
 
         /** Change la couleur du curseur **/
-        .site{
+        .curseur{
             border:10px solid <?= get_theme_mod("border_color_curseur"); ?>;
         }
     </style>
