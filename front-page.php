@@ -13,6 +13,12 @@
                                 "container" =>"nav"));
         ?>
 
+        <?php
+        /******************************************* menu atelier */
+                wp_nav_menu(array("menu"=> "ateliers",
+                                "container" =>"nav"));
+        ?>
+
         <!-- COEUR -->
         <div class="coeur"></div>
         <!-- <div class="coeur"></div>
