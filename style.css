@@ -1,6 +1,6 @@
 @charset "UTF-8";
 /**
-Theme Name: 2022-4w4 Exercice-4 - Ngoc Quynh Pham
+Theme Name: 2022-4w4 TP2 - Ngoc Quynh Pham
 Author: Ngoc Quynh Pham
 Author URI: https://github.com/nquynhp/4w4-lab5.git
 Description: Ce thème servira de base de développement pour l'ensemble du cours 4W4. Chacune des étapes de développement se retrouvera sur gitHub à l'adresse: https://github.com/nquynhp/4w4-lab5.git
@@ -1092,12 +1092,17 @@ hr {
   height: 90px;
 }
 
+.menu-accueil-container .menu .menu-item .menu-item-description,
+.menu-evenement-container .menu .menu-item .menu-item-description {
+  font-size: clamp(0.5rem, 1.5rem, 3rem);
+}
+
 .menu-accueil-container .menu .menu-item a,
 .menu-evenement-container .menu .menu-item a {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  font-size: clamp(1rem, 2vw, 1rem);
+  font-size: clamp(1.5rem, 2vw, 1rem);
   color: #F299B1;
   height: 100%;
 }
