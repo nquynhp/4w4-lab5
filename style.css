@@ -1084,6 +1084,30 @@ hr {
   background-image: url("https://s2.svgbox.net/materialui.svg?ic=school&color=000");
 }
 
+.menu-accueil-container .menu .atelier__htmlcss .menu-item-icone,
+.menu-evenement-container .menu .atelier__htmlcss .menu-item-icone,
+.menu-ateliers-container .menu .atelier__htmlcss .menu-item-icone {
+  background-image: url("https://s2.svgbox.net/files.svg?ic=css");
+}
+
+.menu-accueil-container .menu .atelier__git .menu-item-icone,
+.menu-evenement-container .menu .atelier__git .menu-item-icone,
+.menu-ateliers-container .menu .atelier__git .menu-item-icone {
+  background-image: url("https://s2.svgbox.net/files.svg?ic=reactjs");
+}
+
+.menu-accueil-container .menu .atelier__react .menu-item-icone,
+.menu-evenement-container .menu .atelier__react .menu-item-icone,
+.menu-ateliers-container .menu .atelier__react .menu-item-icone {
+  background-image: url("https://s2.svgbox.net/files.svg?ic=html");
+}
+
+.menu-accueil-container .menu .atelier__cssAvance .menu-item-icone,
+.menu-evenement-container .menu .atelier__cssAvance .menu-item-icone,
+.menu-ateliers-container .menu .atelier__cssAvance .menu-item-icone {
+  background-image: url("https://s2.svgbox.net/files.svg?ic=git");
+}
+
 .menu-accueil-container .menu .menu-item,
 .menu-evenement-container .menu .menu-item,
 .menu-ateliers-container .menu .menu-item {
@@ -1093,7 +1117,6 @@ hr {
   align-items: flex-start;
   width: 20%;
   flex: 0 0 20%;
-  height: 90px;
 }
 
 .menu-accueil-container .menu .menu-item .menu-item-description,
@@ -1321,7 +1344,7 @@ html ::-webkit-scrollbar-thumb:hover {
 }
 
 .menu-ateliers-container .menu-item-description {
-  color: white;
+  color: rgba(255, 255, 255, 0.338);
 }
 
 /* ---------------------------------------------------------
