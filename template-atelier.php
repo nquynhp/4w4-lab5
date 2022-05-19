@@ -17,50 +17,49 @@
 
         <!-- Description de l'atelier -->
         <section class="atelier__description">
-            <?php the_field('description'); ?>   
+            <h2>Description de l'atelier</h2><?php the_field('description_de_l’atelier_'); ?>   
         </section>
 
         <!-- L'animateur responsable de l'atelier -->
         <p class="atelier__animateur">
-        <?php the_field('animateur'); ?>   
+        L'animateur de l'atelier : <?php the_field('animateur'); ?>   
         </p>
 
         <!-- Date de début de l'atelier -->
         <p class="atelier__dateDebut">
-        <?php the_field('dateDebut'); ?>   
+        Date de début : <?php the_field('date_de_debut_de_l’atelier_'); ?>   
         </p>
 
         <!-- Date de fin de l'atelier -->
         <p class="atelier__dateFin">
-        <?php the_field('dateFin'); ?>   
+        Date de fin : <?php the_field('date_de_fin_de_l’atelier_'); ?>   
         </p>
 
         <!-- Les jours de la semaine lorsqu'il y a l'atelier -->
         <p class="atelier__joursSemaine">
-        <?php the_field('joursSemaine'); ?>   
+        La formation se donnera : <?php the_field('jours_de_la_semaine_de_l’atelier_'); ?>   
         </p>
 
         <!-- Quand l'atelier débute -->
         <p class="atelier__heureDebut">
-        <?php the_field('heureDebut'); ?>   
+        L'heure de début : <?php the_field('heure_de_debut_'); ?>   
         </p>
 
         <!-- Quand l'atelier se termine -->
         <p class="atelier__heureFin">
-        <?php the_field('heureFin'); ?>   
+        L'heure de fin : <?php the_field('heure_de_fin'); ?>   
         </p>
 
         <!-- La durée de l'atelier -->
         <p class="atelier__duree">
-        <?php the_field('duree'); ?>   
+        Durée de chacune des séances est de <?php the_field('duree_d’une_seance_d’atelier_'); ?>   
         </p>
 
         <!-- Local où se déroulera l'atelier -->
         <p class="atelier__local">
-        <?php the_field('local'); ?>   
+        <?php the_field('local_ou_se_deroulera_l’atelier_'); ?>   
         </p>
 
-        <p><?php the_field('organisateur'); ?></p>      
    <?php endif ?>
 </main>
 <?php get_footer() ?>
