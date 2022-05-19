@@ -14,4 +14,4 @@ Github page : https://nquynhp.github.io/4w4-lab5
 
 
 Pour modifier readme.md
-https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax# 4w4-ex4
+https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax# 4w4-epreuve-finale
