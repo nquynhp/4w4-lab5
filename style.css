@@ -1,6 +1,6 @@
 @charset "UTF-8";
 /**
-Theme Name: 2022-4w4 TP2 - Ngoc Quynh Pham
+Theme Name: 2022-4w4 Épreuve finale - Ngoc Quynh Pham
 Author: Ngoc Quynh Pham
 Author URI: https://github.com/nquynhp/4w4-lab5.git
 Description: Ce thème servira de base de développement pour l'ensemble du cours 4W4. Chacune des étapes de développement se retrouvera sur gitHub à l'adresse: https://github.com/nquynhp/4w4-lab5.git
@@ -1062,27 +1062,31 @@ hr {
 }
 
 .menu-accueil-container,
-.menu-evenement-container {
+.menu-evenement-container,
+.menu-ateliers-container {
   width: 100%;
 }
 
 .menu-accueil-container .menu,
-.menu-evenement-container .menu {
+.menu-evenement-container .menu,
+.menu-ateliers-container .menu {
   display: flex;
   flex-wrap: wrap;
   border-radius: 15px;
   justify-content: space-around;
   align-items: center;
-  margin-top: 20px;
+  margin-top: 0;
 }
 
 .menu-accueil-container .menu .menu-item-icone,
-.menu-evenement-container .menu .menu-item-icone {
+.menu-evenement-container .menu .menu-item-icone,
+.menu-ateliers-container .menu .menu-item-icone {
   background-image: url("https://s2.svgbox.net/materialui.svg?ic=school&color=000");
 }
 
 .menu-accueil-container .menu .menu-item,
-.menu-evenement-container .menu .menu-item {
+.menu-evenement-container .menu .menu-item,
+.menu-ateliers-container .menu .menu-item {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -1093,12 +1097,14 @@ hr {
 }
 
 .menu-accueil-container .menu .menu-item .menu-item-description,
-.menu-evenement-container .menu .menu-item .menu-item-description {
+.menu-evenement-container .menu .menu-item .menu-item-description,
+.menu-ateliers-container .menu .menu-item .menu-item-description {
   font-size: clamp(0.5rem, 1.5rem, 3rem);
 }
 
 .menu-accueil-container .menu .menu-item a,
-.menu-evenement-container .menu .menu-item a {
+.menu-evenement-container .menu .menu-item a,
+.menu-ateliers-container .menu .menu-item a {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -1108,12 +1114,14 @@ hr {
 }
 
 .menu-accueil-container .menu .menu-item a .menu-item-description,
-.menu-evenement-container .menu .menu-item a .menu-item-description {
+.menu-evenement-container .menu .menu-item a .menu-item-description,
+.menu-ateliers-container .menu .menu-item a .menu-item-description {
   font-size: clamp(0.8rem, 1.5vw, 1rem);
 }
 
 .menu-accueil-container .menu .menu-item a .menu-item-icone,
-.menu-evenement-container .menu .menu-item a .menu-item-icone {
+.menu-evenement-container .menu .menu-item a .menu-item-icone,
+.menu-ateliers-container .menu .menu-item a .menu-item-icone {
   width: 2rem;
   height: 2rem;
   background-repeat: no-repeat;
@@ -1304,6 +1312,16 @@ html ::-webkit-scrollbar-thumb:hover {
   will-change: transform;
   /*Transition*/
   transition: transform 0.9s cubic-bezier(0.15, 0.9, 0.35, 0.95), opacity 0.5s;
+}
+
+.menu-ateliers-container {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 50px;
+}
+
+.menu-ateliers-container .menu-item-description {
+  color: white;
 }
 
 /* ---------------------------------------------------------

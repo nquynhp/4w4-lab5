@@ -1,18 +1,22 @@
 <?php get_header() ?>
 <main class="site__main">
 <h1>Les études en TIM</h1>
+
+        <h2>Les études en TIM</h2>
         <?php
         /******************************************* menu accueil */
                 wp_nav_menu(array("menu"=> "menu_accueil",
                                 "container" =>"nav"));
-        ?>
+        ?><br>
 
+        <h2>Les événements cette année</h2>
         <?php
         /******************************************* menu evenement */
                 wp_nav_menu(array("menu"=> "evenement",
                                 "container" =>"nav"));
-        ?>
+        ?><br>
 
+        <h2>Les ateliers à venir</h2>
         <?php
         /******************************************* menu atelier */
                 wp_nav_menu(array("menu"=> "ateliers",

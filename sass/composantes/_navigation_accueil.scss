@@ -1,5 +1,6 @@
 .menu-accueil-container,
-.menu-evenement-container { // nav
+.menu-evenement-container,
+.menu-ateliers-container { // nav
 width: 100%;
 
     .menu { // ul
@@ -9,7 +10,7 @@ width: 100%;
         border-radius: 15px;
         justify-content: space-around;
         align-items: center;
-        margin-top: 20px;
+        margin-top: 0;
 
         .menu-item-icone{//li
             background-image: url('https://s2.svgbox.net/materialui.svg?ic=school&color=000');

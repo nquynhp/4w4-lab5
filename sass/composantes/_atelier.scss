@@ -1,0 +1,9 @@
+.menu-ateliers-container{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 50px;
+    
+    .menu-item-description{
+        color: white;
+    }
+}
